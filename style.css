@@ -1,0 +1,566 @@
+
+body, 
+html {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+}
+
+.content-container {
+    background-image: url(/pic/bcg_d.png);
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+/************************************************************ MENU */
+
+
+.side-menu {
+    height: 100%;
+    width: 250px;
+    position: relative;
+}
+
+.side-menu-bcg {
+    background-color: #4D535F;
+    height: 100%;
+    width: 100%;
+}
+
+.burger {
+    background-image: url(/pic/burger.png);
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    height: 60px;
+    width: 60px;
+}
+
+.burger-waiter {
+    background-image: url(/pic/burger_waiter.png);
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    position: absolute;
+    left: 45px;
+    top: 50px;
+    height: 150px;
+    width: 150px;
+}
+
+.menu {
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 2%;
+    margin: 0 !important;
+}
+
+.menu-icons,
+.menu-titles {
+    height: 95%;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    color: #EEEEEE;
+    font-size: 23px;
+}
+
+.menu-icon,
+.menu-title {
+    height: 25%;
+    position: relative;
+    width: 100%;
+}
+
+.menu-icon img {
+    height: 40px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.menu-titles-box {
+    /* background-color: rgb(236, 48, 48); */
+    padding: 0 !important;
+    position: relative;
+}
+
+.menu-title p{
+    vertical-align: middle;
+    margin: 0;
+    position: absolute;               
+    top: 50%;                         
+    transform: translate(0, -50%)
+}
+
+
+
+/************************************************************ PRESENTATION */
+
+
+.presentation {
+    height: 40%;
+    width: 43%;
+    position: absolute;
+    right: 0;
+    left: 320px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    color: #4D535F;
+}
+
+
+.hello {
+    height: 20%;
+    position: relative;
+}
+
+.hello p {
+    margin: 0;
+    width: 100%;
+    position: absolute;              
+    top: 50%;  
+    text-align: center;                   
+    transform: translate(0, -50%)
+}
+
+.name {
+    height: 50%;
+    background-image: url(/pic/paint.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 110%;
+    position: relative;
+}
+
+.name p {
+    margin: 0;
+    width: 100%;
+    position: absolute;              
+    top: 50%;  
+    text-align: center;                   
+    transform: translate(0, -50%)
+}
+
+.frontend {
+    height: 30%;
+    position: relative;
+}
+
+
+.frontend p {
+    margin: 0;
+    width: 100%;
+    position: absolute;              
+    top: 50%;  
+    text-align: center;                   
+    transform: translate(0, -50%);
+    font-weight: 400;
+}
+
+
+
+
+/************************************************************ SOCIAL */
+
+.social {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 65px;
+    width: 200px;
+    padding: 20px 20px 0 0;
+}
+
+.social-img {
+    width: 33.3%;
+    padding: 0!important;
+}
+
+
+.social-img img {
+    height: 40px;
+}
+
+
+
+
+
+/************************************************************ ANIMATION */
+
+.animation {
+    max-width: 800px;
+    position: absolute;
+    top: 60%;                
+    transform: translate(0, -50%);
+    right: 0;
+}
+
+
+
+
+
+
+
+
+/************************************************************ MEDIA QUERY */
+
+@media only screen and (min-width: 1920px) {
+    .side-menu {
+        width: 300px;
+    }
+    
+    .burger {
+        background-size: 70px 70px;
+        height: 70px;
+        width: 70px;
+    }
+    
+    .burger-waiter {
+        background-size: 177px 177px;
+        left: 43px;
+        top: 50px;
+        height: 177px;
+        width: 177px;
+    }
+    
+    .menu {
+        height: 300px;
+    }
+    
+    .menu-icons,
+    .menu-titles {
+        font-size: 30px;
+    }
+    
+    .menu-icon img {
+        height: 45px;
+    }
+    
+    .social {
+        width: 250px;
+    }
+    .social-img img {
+        height: 50px;
+    }
+    .presentation {
+        height: 30%;
+        width: 43%;
+        left: 370px;
+    }
+
+    .hello p {
+        font-size: 2.5rem;
+    }
+    
+    .name {
+        background-size: 115%;
+    }
+
+    .name p {
+        font-size: 3rem;
+    }
+    
+    .frontend p {
+        font-size: 2rem;             
+        top: 40%;  
+    }
+    .animation {
+        max-width: 900px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1366px) {
+    .side-menu {
+        width: 220px;
+    }
+    .side-menu-bcg {
+        opacity: 1;
+     }
+    
+    .burger {
+        background-size: 50px 50px;
+        left: 40px;
+        top: 40px;
+        height: 50px;
+        width: 50px;
+    }
+    
+    .burger-waiter {
+        background-size: 125px 125px;
+        left: 36px;
+        top: 40px;
+        height: 125px;
+        width: 125px;
+    }
+    
+    .menu {
+        height: 250px;
+    }
+    
+    .menu-icons,
+    .menu-titles {
+        font-size: 20px;
+    }
+    
+    .menu-icon img {
+        height: 35px;
+    }
+    
+    .social {
+        width: 170px;
+    }
+    .social-img img {
+        height: 30px;
+    }
+    .presentation {
+        height: 30%;
+        width: 43%;
+        left: 280px;
+    }
+    
+    .name p {
+        font-size: 2rem;
+    }
+    
+    .frontend p {
+        font-size: 1.5rem;             
+        top: 40%;  
+    }
+
+    .animation {
+        max-width: 650px;
+    }
+}
+
+
+/******************** TABLET LANDSCAPE */
+
+
+@media only screen and (max-width: 1024px) {
+    .side-menu-bcg {
+       opacity: 0;
+    }
+
+    .burger-waiter {
+        opacity: 0;
+    }
+
+    .burger {
+        opacity: 1;
+        background-size: 50px 50px;
+        left: 25px;
+        top: 20px;
+        height: 50px;
+        width: 50x;
+    }
+
+    .menu {
+        opacity: 0;
+    }
+
+    .presentation {
+        height: 30%;
+        width: 85%;
+        position: absolute;                  
+        top: 15%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .hello {
+        height: 30%;
+        font-size: 2rem;
+    }
+
+    .name {
+        background-position: center;
+        background-size: 80%;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .name p {           
+        top: 40%;  
+        font-size: 2.5rem;
+    }
+    
+    .frontend p {             
+        top: 20%;  
+        font-size: 2.5rem;
+        font-weight: 200;
+    }
+
+    .social {
+        height: 65px;
+        width: 200px;
+    }
+    
+    .social-img img {
+        height: 40px;
+    }
+
+    .animation {
+        max-width: 100%;
+        bottom: 15%;                
+        transform: translate(0, -15%);
+        height: 55%;
+    }
+}
+
+
+/******************** TABLET PORTRAIT */
+
+
+@media only screen and (max-width: 768px) {
+
+    .presentation {
+        height: 20%;
+    }
+    
+    .hello {
+        height: 40%;
+    }
+
+    .name {
+        background-size: 100%;
+        background-position: bottom right;
+        width: 90%;
+    }
+    
+    .name p {           
+        top: 40%;  
+    }
+    
+    .frontend p {             
+        top: 30%;  
+    }
+
+    .animation {
+        bottom: 30%;                
+        transform: translate(0, -30%);
+        height: 70%;
+        min-width: 800px;
+    }
+}
+
+
+
+@media only screen and (max-width: 650px) {
+
+    .name {
+        background-size: 110%;
+        width: 95%;
+    }
+    
+    .name p {           
+        font-size: 2.1rem;
+    }
+    
+    .frontend p {             
+        font-size: 2rem;
+    }
+
+    .animation {
+        bottom: 20%;                
+        transform: translate(0, -20%);
+        height: 50%;
+        min-width: 800px;
+    }
+}
+
+
+
+
+
+/******************** MOBILE */
+
+
+@media only screen and (max-width: 480px) {
+
+    .burger {
+        background-size: 45px 45px;
+        left: 25px;
+        top: 20px;
+        height: 45px;
+        width: 45x;
+    }
+
+    .presentation {                
+        top: 20%;
+    }
+
+
+    .hello {
+        height: 40%;
+        font-size: 1.5rem;
+    }
+
+    .name {
+        background-size: 120%;
+        width: 99%;
+    }
+    
+    .name p {           
+        top: 40%;  
+        font-size: 1.6rem;
+    }
+    
+    .frontend p {             
+        top: 50%;  
+        font-size: 1.65rem;
+        max-width: 95%;
+        text-align: center;
+        margin: 0 2%;
+    }
+
+    .social {
+        height: 55px;
+        width: 170px;
+        right: 0px;
+    }
+
+    .social-img {
+        text-align: center;
+    }
+    
+    .social-img img {
+        height: 35px;
+    }
+
+    .animation {
+        min-width: 700px;
+        bottom: 10%;                
+        transform: translate(0, -10%);
+    }
+}
