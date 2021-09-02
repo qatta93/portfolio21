@@ -11,23 +11,23 @@
 <main class="container">
   <div class="content-container">
     <div class="side-menu">
-        <div class="burger"></div>
-        <div class="burger-waiter"></div>
-        <div class="side-menu-bcg">
+        <input type="button"  onclick="ShowDiv()" class="burger" />
+        <div class="side-menu-bcg" id="myDiv">
+          <div class="burger-waiter"></div>
           <div class="menu row justify-content-center">
             <div class="menu-icons-box col-5">
               <ul class="menu-icons"> 
-              <li class="menu-icon"><img src="pic/mail.png" alt="contact"></li>
-              <li class="menu-icon"><img src="pic/portfolio.png" alt="portfolio"></li>
-              <li class="menu-icon"><img src="pic/curriculum.png" alt="curriculum"></li>
-              <li class="menu-icon"><img src="pic/home.png" alt="home"></li>
+                <li class="menu-icon"><a href="contact.html"><img src="pic/mail.png" alt="contact"></a></li>
+                <li class="menu-icon"><a href="portfolio.html"><img src="pic/portfolio.png" alt="portfolio"></a></li>
+                <li class="menu-icon"><a href="curriculum.html"><img src="pic/curriculum.png" alt="curriculum"></a></li>
+                <li class="menu-icon"><img src="pic/home.png" alt="home"></li>
               </ul> 
             </div>
             <div class="menu-titles-box col-6">
               <ul class="menu-titles"> 
-                <li class="menu-title"><p>contact</p></li>
-                <li class="menu-title"><p>portfolio</p></li>
-                <li class="menu-title"><p>about me</p></li>
+                <li class="menu-title"><a href="contact.html"><p>contact</p></a></li>
+                <li class="menu-title"><a href="portfolio.html"><p>portfolio</p></a></li>
+                <li class="menu-title"><a href="aboutme.html"><p>about me</p></a></li>
                 <li class="menu-title"><p>home</p></li>
               </ul> 
             </div>
@@ -41,9 +41,9 @@
       <h2 class="frontend"><p>UI/UX and frontend enthusiast</p></h2>
     </div>
     <div class="social row ">
-      <div class="social-img col-4"><img src="pic/github.png" alt="github"></div>
-      <div class="social-img col-4"><img src="pic/linkedin.png" alt="linkedin"></div>
-      <div class="social-img col-4"><img src="pic/instagram.png" alt="instagram"></div>
+      <div class="social-img col-4"><a href="https://github.com/qatta93" target="_blank"><img src="pic/github.png" alt="github"></a></div>
+      <div class="social-img col-4"><a href="https://www.linkedin.com/in/patrycjapanasiuk/" target="_blank"><img src="pic/linkedin.png" alt="linkedin"></a></div>
+      <div class="social-img col-4"><a href="https://www.instagram.com/__qatta/" target="_blank"><img src="pic/instagram.png" alt="instagram"></a></div>
     </div>
 
     <div class="animation" id="anim"></div>

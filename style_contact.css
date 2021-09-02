@@ -45,7 +45,6 @@ html {
     background-color: #4D535F;
     height: 100%;
     width: 100%;
-    display: none;
 }
 
 .burger {
@@ -91,11 +90,13 @@ html {
     color: #EEEEEE;
     font-size: 23px;
 }
+
                                                            /* change */
-.menu-titles li:last-child { 
-    color: #F8E058;
+.menu-titles li:first-child { 
+color: #F8E058;
 }
-                                                         /* change */
+                                                        /* change */
+
 .menu-icon,
 .menu-title {
     height: 25%;
@@ -108,7 +109,8 @@ html {
     color: inherit;
 }
 
-.menu-title a:hover {
+.menu-title a:hover,
+.menu-title a:active {
     color: #F8E058;
 }
 
@@ -137,71 +139,96 @@ html {
 
 
 
-/************************************************************ PRESENTATION */
+/************************************************************ CONTACT   */
 
 
-.presentation {
-    height: 40%;
-    width: 43%;
+.contact,
+.contact-small {
+    height: 100%;
     position: absolute;
     right: 0;
-    left: 320px;
+    left: 220px;
     top: 0;
-    bottom: 0;
-    margin: auto 0;
+}
+
+.contact-small {
+    display: none;
+}
+
+.contact-container {
+    height: 100%;
+    width: 100%;
+    margin: 0 !important;
+}
+
+.contact-box {
+    padding: 7% 5% !important;
+    position: relative;
+}
+
+.contact-text {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
     color: #4D535F;
 }
 
-
-.hello {
-    height: 20%;
-    position: relative;
+.contact-text p:last-child {
+    color: #F8E058;
+    text-shadow: -1px -1px 0 #4D535F, 1px -1px 0 #4D535F, -1px 1px 0 #4D535F, 1px 1px 0 #4D535F;
 }
 
-.hello p {
+.contact-form {
     margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+    color: #4D535F;
+    width: 60%;
+}
+
+.form {
     width: 100%;
-    position: absolute;              
-    top: 50%;  
-    text-align: center;                   
-    transform: translate(0, -50%)
+    margin: 15px 0 !important;
+    background-color: rgba(255, 255, 255, 0.705);
+    border: none;
+    box-shadow: inset 2px 2px 5px #b8b9be,inset -8px -8px 15px #fff!important;
+    border-radius: 10px;
+    padding-left: 20px;
 }
 
-.name {
-    height: 50%;
-    background-image: url(pic/paint.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 110%;
-    position: relative;
+.form-name,
+.form-email {
+    height: 50px;
 }
 
-.name p {
-    margin: 0;
-    width: 100%;
-    position: absolute;              
-    top: 50%;  
-    text-align: center;                   
-    transform: translate(0, -50%)
+.form-text {
+    padding-top: 15px;
+    font-size: 1rem !important;
 }
 
-.frontend {
-    height: 30%;
-    position: relative;
+.form-button {
+    width: 150px;
+    height: 50px;
+    box-shadow: 6px 6px 12px #4d535f57,-15px -15px 16px #fff!important;
+    background-color: #F5F5F5;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4D535F;
+    padding-left: 0;
 }
-
-
-.frontend p {
-    margin: 0;
-    width: 100%;
-    position: absolute;              
-    top: 50%;  
-    text-align: center;                   
-    transform: translate(0, -50%);
-    font-weight: 400;
-}
-
-
 
 
 /************************************************************ SOCIAL */
@@ -229,26 +256,40 @@ html {
 
 
 
-/************************************************************ ANIMATION */
-
-.animation {
-    max-width: 800px;
-    position: absolute;
-    top: 60%;                
-    transform: translate(0, -50%);
-    right: 0;
-}
-
-
-
-
-
-
-
 
 /************************************************************ MEDIA QUERY */
 
 @media only screen and (min-width: 1920px) {
+
+    .contact {
+        left: 300px;
+    }
+    
+    .contact-text {
+        font-size: 2.8rem;
+        font-weight: 500;
+    }
+    
+    .contact-form {
+        font-size: 1.3rem;
+    }
+    
+    .form-name,
+    .form-email {
+        height: 70px;
+    }
+    
+    .form-text {
+        font-size: 1.3rem !important;
+    }
+    
+    .form-button {
+        width: 170px;
+        height: 60px;
+        font-size: 1.7rem;
+        margin-top: 30px!important;
+    }
+
     .side-menu {
         width: 300px;
     }
@@ -286,31 +327,7 @@ html {
     .social-img img {
         height: 50px;
     }
-    .presentation {
-        height: 30%;
-        width: 43%;
-        left: 370px;
-    }
 
-    .hello p {
-        font-size: 2.5rem;
-    }
-    
-    .name {
-        background-size: 115%;
-    }
-
-    .name p {
-        font-size: 3rem;
-    }
-    
-    .frontend p {
-        font-size: 2rem;             
-        top: 40%;  
-    }
-    .animation {
-        max-width: 900px;
-    }
 }
 
 
@@ -358,24 +375,6 @@ html {
     .social-img img {
         height: 30px;
     }
-    .presentation {
-        height: 30%;
-        width: 43%;
-        left: 280px;
-    }
-    
-    .name p {
-        font-size: 2rem;
-    }
-    
-    .frontend p {
-        font-size: 1.5rem;             
-        top: 40%;  
-    }
-
-    .animation {
-        max-width: 650px;
-    }
 }
 
 
@@ -409,38 +408,19 @@ html {
         opacity: 0;
     }
 
-    .presentation {
-        height: 30%;
-        width: 85%;
-        position: absolute;                  
-        top: 15%;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        width: 100%;
-    }
-    
-    .hello {
-        height: 30%;
-        font-size: 2rem;
+    .contact {
+        display: none;
     }
 
-    .name {
-        background-position: center;
-        background-size: 80%;
-        width: 90%;
-        margin: 0 auto;
+    .contact-small {
+        display: block;
+        width: 100%;
+        left: 0;
     }
-    
-    .name p {           
-        top: 40%;  
-        font-size: 2.5rem;
-    }
-    
-    .frontend p {             
-        top: 20%;  
-        font-size: 2.5rem;
-        font-weight: 200;
+
+    .contact-box {
+        height: 30%;
+        padding: 30% 0 0 0 !important;
     }
 
     .social {
@@ -450,13 +430,6 @@ html {
     
     .social-img img {
         height: 40px;
-    }
-
-    .animation {
-        max-width: 100%;
-        bottom: 15%;                
-        transform: translate(0, -15%);
-        height: 55%;
     }
 }
 
@@ -469,61 +442,12 @@ html {
     .content-container {
         min-height: 800px;
     }
-
-    .presentation {
-        height: 20%;
-    }
-    
-    .hello {
-        height: 40%;
-    }
-
-    .name {
-        background-size: 100%;
-        background-position: bottom right;
-        width: 90%;
-    }
-    
-    .name p {           
-        top: 40%;  
-    }
-    
-    .frontend p {             
-        top: 30%;  
-    }
-
-    .animation {
-        bottom: 30%;                
-        transform: translate(0, -30%);
-        height: 70%;
-        min-width: 800px;
-    }
 }
 
 
 
 @media only screen and (max-width: 650px) {
 
-
-    .name {
-        background-size: 110%;
-        width: 95%;
-    }
-    
-    .name p {           
-        font-size: 2.1rem;
-    }
-    
-    .frontend p {             
-        font-size: 2rem;
-    }
-
-    .animation {
-        bottom: 20%;                
-        transform: translate(0, -20%);
-        height: 50%;
-        min-width: 800px;
-    }
 }
 
 
@@ -547,34 +471,6 @@ html {
         width: 45x;
     }
 
-    .presentation {                
-        top: 20%;
-    }
-
-
-    .hello {
-        height: 40%;
-        font-size: 1.5rem;
-    }
-
-    .name {
-        background-size: 120%;
-        width: 99%;
-    }
-    
-    .name p {           
-        top: 40%;  
-        font-size: 1.6rem;
-    }
-    
-    .frontend p {             
-        top: 50%;  
-        font-size: 1.65rem;
-        max-width: 95%;
-        text-align: center;
-        margin: 0 2%;
-    }
-
     .social {
         height: 55px;
         width: 170px;
@@ -587,11 +483,5 @@ html {
     
     .social-img img {
         height: 35px;
-    }
-
-    .animation {
-        min-width: 700px;
-        bottom: 10%;                
-        transform: translate(0, -10%);
     }
 }
