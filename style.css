@@ -23,7 +23,7 @@ html {
 }
 
 .content-container {
-    background-image: url(/pic/bcg_d.png);
+    background-image: url(pic/bcg_d.png);
     height: 100vh;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -47,7 +47,7 @@ html {
 }
 
 .burger {
-    background-image: url(/pic/burger.png);
+    background-image: url(pic/burger.png);
     background-repeat: no-repeat;
     background-size: 60px 60px;
     position: absolute;
@@ -58,7 +58,7 @@ html {
 }
 
 .burger-waiter {
-    background-image: url(/pic/burger_waiter.png);
+    background-image: url(pic/burger_waiter.png);
     background-repeat: no-repeat;
     background-size: 150px 150px;
     position: absolute;
@@ -105,7 +105,6 @@ html {
 }
 
 .menu-titles-box {
-    /* background-color: rgb(236, 48, 48); */
     padding: 0 !important;
     position: relative;
 }
@@ -152,7 +151,7 @@ html {
 
 .name {
     height: 50%;
-    background-image: url(/pic/paint.png);
+    background-image: url(pic/paint.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 110%;
