@@ -25,6 +25,7 @@ html {
 .content-container {
     background-image: url(pic/bcg_d.png);
     height: 100vh;
+    max-height: -webkit-fill-available;
     overflow-y: hidden;
     overflow-x: hidden;
     position: relative;
@@ -486,6 +487,7 @@ html {
 
 @media only screen and (max-width: 650px) {
 
+
     .name {
         background-size: 110%;
         width: 95%;
@@ -515,6 +517,10 @@ html {
 
 
 @media only screen and (max-width: 480px) {
+
+    .content-container {
+        min-height: 600px;
+    }
 
     .burger {
         background-size: 45px 45px;
