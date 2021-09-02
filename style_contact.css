@@ -300,27 +300,6 @@ color: #F8E058;
         width: 70px;
     }
     
-    .burger-waiter {
-        background-size: 177px 177px;
-        left: 43px;
-        top: 50px;
-        height: 177px;
-        width: 177px;
-    }
-    
-    .menu {
-        height: 300px;
-    }
-    
-    .menu-icons,
-    .menu-titles {
-        font-size: 30px;
-    }
-    
-    .menu-icon img {
-        height: 45px;
-    }
-    
     .social {
         width: 250px;
     }
@@ -385,6 +364,7 @@ color: #F8E058;
 
     .content-container {
         min-height: 700px;
+        overflow-y: scroll;
     }
 
     .side-menu-bcg {
@@ -416,25 +396,48 @@ color: #F8E058;
         display: block;
         width: 100%;
         left: 0;
+        padding-top: 10%;
+    }
+
+    .contact-container {
+        display: block!important;
     }
 
     .contact-box {
-        height: 30%;
-        padding: 30% 0 0 0 !important;
+        height: 60%;
+        padding: 0 !important;
     }
 
-    .social {
-        height: 65px;
-        width: 200px;
+    .contact-container div:first-of-type {
+        height: 30%;
+    }
+
+    .contact-form {
+        height: 90% !important;
+        font-size: 1.3rem;
+        width: 580px;
+        margin-top: 5%;
     }
     
-    .social-img img {
-        height: 40px;
+    .form-name,
+    .form-email {
+        height: 10%;
+    }
+    
+    .form-text {
+        font-size: 1.3rem !important;
+    }
+    
+    .form-button {
+        width: 170px;
+        height: 60px;
+        border-radius: 15px;
+        margin-top: 10px;
     }
 }
 
 
-/******************** TABLET PORTRAIT */
+/******************** TABLET PORTRAIT  768*1024*/
 
 
 @media only screen and (max-width: 768px) {
@@ -442,11 +445,66 @@ color: #F8E058;
     .content-container {
         min-height: 800px;
     }
+
+    .contact-text {
+        font-size: 1.5rem;
+        top: 150px;
+    }
+
+    .contact-form {
+        font-size: 1.2rem;
+        width: 450px;
+        margin-top: 60px;
+    }
+    
+    .form-name,
+    .form-email {
+        height: 10%;
+    }
+    
+    .form-text {
+        font-size: 1.2rem !important;
+        height: 200px;
+    }
+
+    .contact-header {
+        width: 150px;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
+    
+    .form-button {
+        margin-top: 30px!important;
+    }
 }
 
 
 
 @media only screen and (max-width: 650px) {
+
+    .contact-text {
+        font-size: 1.4rem;
+        top: 100px;
+    }
+
+    .contact-form {
+        width: 400px;
+        margin-top: 30px;
+    }
+    
+    .form-name,
+    .form-email {
+        height: 13%;
+    }
+    
+    .form-text {
+        font-size: 1.2rem !important;
+        height: 180px;
+    }
+    
+    .form {
+        margin: 10px 0 !important;
+    }
 
 }
 
@@ -460,7 +518,8 @@ color: #F8E058;
 @media only screen and (max-width: 480px) {
 
     .content-container {
-        min-height: 600px;
+        min-height: 640px;
+        padding-bottom: 30px;
     }
 
     .burger {
@@ -469,6 +528,39 @@ color: #F8E058;
         top: 20px;
         height: 45px;
         width: 45x;
+    }
+
+    .contact-text {
+        font-size: 1.1rem;
+        top: 100px;
+    }
+
+    .contact-form {
+        width: 300px;
+        margin-top: 70px;
+    }
+    
+    .form-name,
+    .form-email {
+        height: 12%;
+        font-size: 1.1rem;
+    }
+    
+    .form-text {
+        font-size: 1.1rem !important;
+        height: 180px;
+    }
+    
+    .form {
+        margin: 8px 0 !important;
+    }
+
+    .form-button {
+        width: 140px;
+        height: 50px;
+        border-radius: 15px;
+        margin-top: 10px!important;
+        margin-bottom: 40px!important;
     }
 
     .social {
