@@ -1,0 +1,826 @@
+
+body, 
+html {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+}
+
+.content-container {
+    background-image: url(pic/bcg_d.png);
+    height: 100vh;
+    max-height: -webkit-fill-available;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+/************************************************************ MENU */
+
+
+.side-menu {
+    height: 100%;
+    width: 250px;
+    position: relative;
+}
+
+.side-menu-bcg {
+    background-color: #4D535F;
+    height: 100%;
+    width: 100%;
+}
+
+.burger {
+    background-image: url(pic/burger.png);
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    border: none;
+    z-index: 10;
+}
+
+.burger-waiter {
+    background-image: url(pic/burger_waiter.png);
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    position: absolute;
+    left: 45px;
+    top: 50px;
+    height: 150px;
+    width: 150px;
+}
+
+.menu {
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 2%;
+    margin: 0 !important;
+}
+
+.menu-icons,
+.menu-titles {
+    height: 95%;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    color: #EEEEEE;
+    font-size: 23px;
+}
+
+                                                           /* change */
+.menu-titles li:nth-child(2) { 
+color: #F8E058;
+}
+                                                        /* change */
+
+.menu-icon,
+.menu-title {
+    height: 25%;
+    position: relative;
+    width: 100%;
+}
+
+.menu-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-title a:hover,
+.menu-title a:active {
+    color: #F8E058;
+}
+
+.menu-icon img {
+    height: 40px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.menu-titles-box {
+    padding: 0 !important;
+    position: relative;
+}
+
+.menu-title p{
+    vertical-align: middle;
+    margin: 0;
+    position: absolute;               
+    top: 50%;                         
+    transform: translate(0, -50%)
+}
+
+
+
+/************************************************************ PORTFOLIO   */
+
+
+.projects-container {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    left: 235px;
+    top: 0;
+}
+
+.portfolio-header-container {
+    display: none;
+}
+
+.portfolio-header {
+    display: none;
+}
+
+.projects-box {
+    height: 100%;
+    width: 100%;
+    padding: 8% 0 3% 0;
+}
+
+.projects {
+    height: 45%;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.project {
+    background-color: rgba(255, 255, 255, 0.705);
+    box-shadow: inset 2px 2px 5px #b8b9be,inset -8px -8px 15px #fff;
+    border-radius: 15px;
+    height: 90%;
+    width: 90%;
+    position: relative;
+}
+
+.projects-box-left .projects{
+    padding: 0 5% 0% 15%;
+}
+
+.projects-box-right .projects{
+    padding: 0 15% 0% 5%;
+}
+
+.project-header {
+    font-size: 1.7rem;
+    padding-top: 10px;
+}
+
+.tech {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.project-img {
+    width: 100%;
+    height: 70%;
+    position: relative;
+}
+
+.project-img img {
+    height: 80%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+}
+
+.luope {
+    position: absolute;
+    background-image: url(pic/loupe.png);
+    background-size: cover;
+    opacity: 0.2;
+    height: 80px;
+    width: 80px;
+    right: 20px;
+    bottom: 20px;
+}
+
+/************************************************************ PROJECTS POP UP */
+
+.projects-pop {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: #4d535fea;
+    display: none;
+}
+
+.projects-pop-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.close {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 30px;
+    top: 30px;
+    background-image: url(pic/close.png);
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+}
+
+.project-pop {
+    height: 100%;
+    width: 100%;
+    padding: 4%;
+}
+
+.project-pop * {
+    padding: 0 30px;
+    border-radius: 15px;
+}
+
+.mobile-box,
+.desktop-box {
+    position: relative;
+}
+
+.mobile-img,
+.desktop-img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    height: 80%;
+    width: 95%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+.mobile-img img {
+    width: 102%;
+    margin-left: -2px;
+    padding: 0;
+}
+
+.desktop-img {
+    height: 95%;
+    padding-left: 10px;
+}
+
+.desktop-img img {
+    width: 102%;
+    margin-left: -4px;
+    padding: 0;
+}
+
+.description-box {
+    color: #ffffff;
+    position: relative;
+    padding: 5% 0 5% 0 !important;
+}
+
+.description-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    padding: 0;
+    text-align: center;
+}
+
+.description-title {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.description-text {
+    font-size: 1rem;
+}
+
+.description-links-header {
+    color: #F8E058;
+    letter-spacing: 3px;
+    font-size: 1.3rem;
+}
+
+.description-links {
+    margin-top: 40px;
+}
+
+.description-links-box {
+    border: 1px solid #F8E058;
+    border-radius: 0;
+    margin-top: 15px;
+    height: 40px;
+}
+
+.description-links-box p{
+    line-height: 40px;
+}
+
+.description-links-box p a{
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#pop-portfolio .description-title {
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+#pop-portfolio .description-text {
+    font-size: 1.2rem;
+}
+
+/************************************************************ MENU COVER */
+
+.menu-cover {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: #2E3032;
+    opacity: 0.95;
+}
+
+.menu-cover-list {
+    height: 70%;
+    width: 50%;
+    margin: 0 auto !important;
+    padding-left: 10%;
+    position: relative;
+    display: block !important;
+}
+
+.menu-cover-img,
+.menu-cover-text {
+    height: 50%;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}
+
+.menu-cover-img img {
+    height: 80px;
+    margin: 20% 0;
+}
+
+.menu-cover-waiter {
+    height: 30%;
+    text-align: center;
+}
+
+.menu-cover-text {
+    height: 50%;
+    padding-left: 40% !important;
+}
+
+.menu-cover-text p {
+    font-size: 2rem;
+    color: #EEEEEE;
+    height: 23%;
+}
+
+.menu-cover-waiter img {
+    height: 60%;
+}
+
+/************************************************************ SOCIAL */
+
+.social {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 65px;
+    width: 200px;
+    padding: 20px 20px 0 0;
+}
+
+.social-img {
+    width: 33.3%;
+    padding: 0!important;
+}
+
+
+.social-img img {
+    height: 40px;
+}
+
+
+
+
+
+
+/************************************************************ MEDIA QUERY */
+
+@media only screen and (min-width: 1920px) {
+
+    .contact {
+        left: 300px;
+    }
+    
+    .contact-text {
+        font-size: 2.8rem;
+        font-weight: 500;
+    }
+    
+    .contact-form {
+        font-size: 1.3rem;
+    }
+    
+    .form-name,
+    .form-email {
+        height: 70px;
+    }
+    
+    .form-text {
+        font-size: 1.3rem !important;
+    }
+    
+    .form-button {
+        width: 170px;
+        height: 60px;
+        font-size: 1.7rem;
+        margin-top: 30px!important;
+    }
+
+    .side-menu {
+        width: 300px;
+    }
+    
+    .burger {
+        background-size: 70px 70px;
+        height: 70px;
+        width: 70px;
+    }
+    
+    .social {
+        width: 250px;
+    }
+    .social-img img {
+        height: 50px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 1366px) {
+    .side-menu {
+        width: 220px;
+    }
+    .side-menu-bcg {
+        opacity: 1;
+     }
+    
+    .burger {
+        background-size: 50px 50px;
+        left: 40px;
+        top: 40px;
+        height: 50px;
+        width: 50px;
+    }
+    
+    .burger-waiter {
+        background-size: 125px 125px;
+        left: 36px;
+        top: 40px;
+        height: 125px;
+        width: 125px;
+    }
+    
+    .menu {
+        height: 250px;
+    }
+    
+    .menu-icons,
+    .menu-titles {
+        font-size: 20px;
+    }
+    
+    .menu-icon img {
+        height: 35px;
+    }
+    
+    .social {
+        width: 170px;
+    }
+    .social-img img {
+        height: 30px;
+    }
+}
+
+
+/******************** TABLET LANDSCAPE 1024x768*/
+
+
+@media only screen and (max-width: 1024px) {
+
+    .content-container {
+        overflow-y: hidden;
+        left: 0;
+    }
+
+    .side-menu {
+        width: 0;
+    }
+
+    .side-menu-bcg {
+       opacity: 0;
+    }
+
+    .burger-waiter {
+        opacity: 0;
+    }
+
+    .burger {
+        opacity: 1;
+        background-size: 50px 50px;
+        left: 25px;
+        top: 20px;
+        height: 50px;
+        width: 50x;
+    }
+
+    .portfolio-header-container {
+        display: block;
+        height: 150px;
+        position: relative;
+    }
+
+    .portfolio-header {
+        position: absolute;
+        display: block;
+        width: 150px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-decoration: underline solid #F8E058;
+    }
+
+    .projects-container {
+        left: 0;
+    }
+
+    .projects-box {
+        padding-top: 5%;
+    }
+    .projects {
+        margin-top: 0px;
+        height: 35%;
+    }
+
+    .projects-box-left .projects {
+        padding-left: 40px !important;
+        padding-right: 0px !important;
+    }
+
+    .projects-box-left .projects .project {
+        margin-right: 10px !important;
+    }
+
+    .projects-box-right .projects {
+        padding-right: 40px !important;
+        padding-left: 0px !important;
+    }
+
+    .projects-box-right .projects .project {
+        margin-left: 10px !important;
+    }
+    .project {
+        margin: 0 auto !important;
+        height: 100%;
+        margin-top: 20px !important;
+    }
+
+    .project-header {
+        font-size: 1.5rem;
+    }
+    
+    .tech {
+        font-size: 1rem;
+    }
+    
+    .project-img img {
+        height: 75%;
+    }
+
+    .menu {
+        opacity: 0;
+    }
+}
+
+
+/******************** TABLET PORTRAIT  768*1024*/
+
+
+@media only screen and (max-width: 768px) {
+
+    .content-container {
+        min-height: 800px;
+    }
+
+    .projects-box-left .projects {
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+    }
+
+    .projects-box-left .projects .project {
+        margin-right: 5px !important;
+    }
+
+    .projects-box-right .projects {
+        padding-right: 10px !important;
+        padding-left: 0px !important;
+    }
+
+    .projects-box-right .projects .project {
+        margin-left: 5px !important;
+    }
+
+    .projects {
+        margin-top: 50px;
+        height: 30%;
+    }
+
+    .project {
+        margin: 0 auto !important;
+        height: 100%;
+    }
+
+    .project-header {
+        font-size: 1.5rem;
+    }
+    
+    .tech {
+        font-size: 1rem;
+    }
+    
+    .project-img img {
+        height: 75%;
+    }
+}
+
+
+
+@media only screen and (max-width: 576px) {
+
+    .content-container {
+        overflow-y: scroll;
+    }
+
+    .projects-box {
+        height: auto;
+        padding-bottom: 0;
+    }
+
+    .projects-box-right {
+        padding-top: 0;
+        height: auto;
+        padding-bottom: 70px;
+    }
+
+    .projects {
+        margin-top: 30px;
+        height: 300px;
+        padding: 0 !important;
+    }
+
+    .project {
+        margin: 0 10% !important;
+        height: 100%;
+        width: 80%;
+    }
+
+    .projects-box-left .projects {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .projects-box-right .projects {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    .projects-box-right .projects .project {
+        margin: 0 auto !important;
+    }
+
+    .project-header {
+        font-size: 1.5rem;
+    }
+    
+    .tech {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+    
+    .project-img img {
+        height: 75%;
+    }
+
+
+}
+
+
+
+
+/******************** MOBILE */
+
+
+@media only screen and (max-width: 480px) {
+
+    .content-container {
+        min-height: 640px;
+        padding-bottom: 30px;
+    }
+
+    .burger {
+        background-size: 45px 45px;
+        left: 25px;
+        top: 20px;
+        height: 45px;
+        width: 45x;
+    }
+
+    .contact-text {
+        font-size: 1.1rem;
+        top: 100px;
+    }
+
+    .contact-form {
+        width: 300px;
+        margin-top: 70px;
+    }
+    
+    .form-name,
+    .form-email {
+        height: 12%;
+        font-size: 1.1rem;
+    }
+    
+    .form-text {
+        font-size: 1.1rem !important;
+        height: 180px;
+    }
+    
+    .form {
+        margin: 8px 0 !important;
+    }
+
+    .form-button {
+        width: 140px;
+        height: 50px;
+        border-radius: 15px;
+        margin-top: 10px!important;
+        margin-bottom: 40px!important;
+    }
+
+    .social {
+        height: 55px;
+        width: 170px;
+        right: 0px;
+    }
+
+    .social-img {
+        text-align: center;
+    }
+    
+    .social-img img {
+        height: 35px;
+    }
+}

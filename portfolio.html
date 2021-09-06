@@ -1,0 +1,254 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style_portfolio.css">
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+  
+<main class="container">
+  <div class="content-container">
+    <div class="side-menu">
+      <input type="button"  onclick="ShowDiv()" class="burger" />
+      <div class="side-menu-bcg" id="myDiv">
+          <div class="burger-waiter"></div>
+          <div class="menu row justify-content-center">
+            <div class="menu-icons-box col-5">
+              <ul class="menu-icons"> 
+              <li class="menu-icon"><a href="contact.html"><img src="pic/mail.png" alt="contact"></a></li>
+              <li class="menu-icon"><img src="pic/portfolio.png" alt="portfolio"></li>
+              <li class="menu-icon"><a href="curriculum.html"><img src="pic/curriculum.png" alt="curriculum"></a></li>
+              <li class="menu-icon"><a href="index.html"><img src="pic/home.png" alt="home"></a></li>
+              </ul> 
+            </div>
+            <div class="menu-titles-box col-6">
+              <ul class="menu-titles"> 
+                <li class="menu-title"><a href="contact.html"><p>contact</p></a></li>
+                <li class="menu-title"><p>portfolio</p></li>
+                <li class="menu-title"><a href="aboutme.html"><p>about me</p></a></li>
+                <li class="menu-title"><a href="index.html"><p>home</p></a></li>
+              </ul> 
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+
+    <div class="projects-container row">
+      <div class="portfolio-header-container">
+        <h1 class="portfolio-header">PORTFOLIO</h1>
+      </div>
+      <div class="projects-box projects-box-left col-sm-6">
+        <div class="projects">
+          <div class="project" id="project1">
+            <h2 class="project-header">Web Prototype</h2>
+            <h3 class="tech">Adobe XD | PS | CorelDraw</h3>
+            <div class="project-img"><img src="pic/homia.png" alt="homia"></div>
+            <div class="luope"></div>
+          </div>
+        </div>
+        <div class="projects">
+          <div class="project" id="project3">
+            <h2 class="project-header">Web Prototype</h2>
+            <h3 class="tech">Adobe XD | PS | Adobe After Effects</h3>
+            <div class="project-img"><img src="pic/port.png" alt="portfolio"></div>
+            <div class="luope"></div>
+          </div>
+        </div>
+      </div>
+      <div class="projects-box projects-box-right col-sm-6">
+        <div class="projects">
+          <div class="project" id="project2">
+            <h2 class="project-header">ScandyHouse</h2>
+            <h3 class="tech">HTML | CSS | JavaScript | jQuery | PS | PHP</h3>
+            <div class="project-img"><img src="pic/scandy.png" alt="scandy"></div>
+            <div class="luope"></div>
+          </div>
+        </div>
+        <div class="projects">
+          <div class="project" id="project4">
+            <h2 class="project-header">BudgetApp</h2>
+            <h3 class="tech">HTML | CSS | PS | JavaScript</h3>
+            <div class="project-img"><img src="pic/pig.png" alt="pig"></div>
+            <div class="luope"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- HOMIA POP-UP -->
+    <div class="projects-pop" id="pop-homia">
+      <div class="projects-pop-container">
+        <button class="close"></button>
+        <div class="project-pop project-pop-1 row">
+          <div class="mobile-box col-md-3">
+            <div class="mobile-img">
+              <img src="pic/homia_mobile.png" alt="mobile">
+            </div>
+          </div>
+          <div class="desktop-box col-md-6">
+            <div class="desktop-img">
+              <img src="pic/homia_desktop.png" alt="desktop">
+            </div>
+          </div>
+          <div class="description-box col-md-3">
+            <div class="description-container">
+              <div class="description-title">
+                <p>Web Prototype</p>
+                <p>HOMIA</p>
+              </div>
+              <div class="description-text">
+                <p>Adobe XD | PS | CorelDraw</p>
+                <p>The website was designed to promote house projects. There is a configurator that automatically estimates costs of houses and shows the next available date of starting the construction.</p>
+              </div>
+              <div class="description-links">
+                <div class="description-links-header">
+                  <p>LINKS:</p>
+                </div>
+                <div class="description-links-boxes">
+                  <div class="description-links-box">
+                    <p><a href="https://xd.adobe.com/view/a926c21d-5134-4b17-86dd-ed51f76a4213-fc75/screen/9211be44-5f69-46ea-a140-6cb02c9a8a0a" target="_blank"> mobile</a></p>
+                  </div>
+                  <div class="description-links-box">
+                    <p><a href="https://xd.adobe.com/view/6ad123ba-b7f8-4886-9436-3960e95076c2-3f82/" target="_blank">desktop</a></p>
+                  </div>
+                  <div class="description-links-box">
+                    <p>desktop</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- SCANDY POP-UP -->
+<div class="projects-pop" id="pop-scandy">
+  <div class="projects-pop-container">
+    <button class="close"></button>
+    <div class="project-pop project-pop-1 row d-flex justify-content-center">
+      <div class="desktop-box col-md-6">
+        <div class="desktop-img">
+          <img src="" alt="desktop">
+        </div>
+      </div>
+      <div class="description-box col-md-3">
+        <div class="description-container">
+          <div class="description-title">
+            <p>ScandyHouse</p>
+          </div>
+          <div class="description-text">
+            <p>HTML | CSS | JS | jQuery | PS | PHP</p>
+            <p>The website was created for the needs of a company that builds wooden houses. In addition to programming, my tasks were to inwent the brand name, create graphics, a business model and copywriting.</p>
+          </div>
+          <div class="description-links">
+            <div class="description-links-boxes">
+              <div class="description-links-box">
+                <p><a href="http://www.scandyhouse.pl/" target="_blank">LINK</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PORTFOLIO POP-UP -->
+<div class="projects-pop" id="pop-portfolio">
+  <div class="projects-pop-container">
+    <button class="close"></button>
+    <div class="project-pop project-pop-1 row d-flex justify-content-center">
+      <div class="description-box col-md-4">
+        <div class="description-container">
+          <div class="description-title">
+            <p>PORTFOLIO</p>
+          </div>
+          <div class="description-text">
+            <p>Adobe XD | PS | Adobe After Effects | JS | PHP</p></br>
+            <p>Graphics were made thanks to PhotoShop, page layout in ADOBE XD, and the animation in Adobe After Effects. </p>
+            </br>
+            <p style="color:#F8E058">The results of the mock-up are visible on the page you are on :)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BUDGET APP POP-UP -->
+<div class="projects-pop" id="pop-budget">
+  <div class="projects-pop-container">
+    <button class="close"></button>
+    <div class="project-pop project-pop-1 row d-flex justify-content-center">
+      <div class="desktop-box col-md-6">
+        <div class="desktop-img" style="overflow-y: hidden;">
+          <img src="pic/budget.png" alt="desktop">
+        </div>
+      </div>
+      <div class="description-box col-md-3">
+        <div class="description-container">
+          <div class="description-title">
+            <p>Budget App</p>
+          </div>
+          <div class="description-text">
+            <p>HTML | CSS | JS | PS</p>
+            <p>The application allows you 
+              to control your budget. Add 
+              your incomes and expenses to see  a monthly summary.</p>
+          </div>
+          <div class="description-links">
+            <div class="description-links-boxes">
+              <div class="description-links-box">
+                <p><a href="https://qatta93.github.io/budget" target="_blank">LINK</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- <div class="menu-cover">
+      <div class="menu-cover-list row">
+        <div class="menu-cover-img col-3">
+          <img src="pic/mail.png" alt="conact">
+          <img src="pic/portfolio.png" alt="portfolio">
+          <img src="pic/curriculum.png" alt="aboutme">
+          <img src="pic/home.png" alt="home">
+        </div>
+        <div class="menu-cover-text col-9">
+          <p>contact</p>
+          <p>portfolio</p>
+          <p>about me</p>
+          <p>home</p>
+        </div>
+      </div>
+      <div class="menu-cover-waiter">
+        <img src="pic/burger_waiter.png" alt="burger">
+      </div>
+    </div> -->
+
+
+    <div class="social row ">
+      <div class="social-img col-4"><a href="https://github.com/qatta93" target="_blank"><img src="pic/github.png" alt="github"></a></div>
+      <div class="social-img col-4"><a href="https://www.linkedin.com/in/patrycjapanasiuk/" target="_blank"><img src="pic/linkedin.png" alt="linkedin"></a></div>
+      <div class="social-img col-4"><a href="https://www.instagram.com/__qatta/" target="_blank"><img src="pic/instagram.png" alt="instagram"></a></div>
+    </div>
+
+  </div>
+</main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="lottie.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
