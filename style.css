@@ -391,7 +391,71 @@ html {
 
 }
 
+@media only screen and (min-width: 4000px) {
 
+    .side-menu {
+        width: 800px;
+    }
+
+    .burger {
+        background-size: 200px 200px;
+        height: 200px;
+        width: 200px;
+    }
+    
+    .burger-waiter {
+
+        background-size: 490px 490px;
+        height: 490px;
+        width: 490px;
+    }
+    
+    .menu {
+        height: 800px;
+        padding: 4%;
+    }
+    
+    .menu-icons,
+    .menu-titles {
+        font-size: 70px;
+    }
+    
+    .menu-icon img {
+        height: 100px;
+        left: 30px;
+    }
+
+    .presentation {
+        left: 1300px;
+    }
+    
+    .hello p {        
+        font-size: 6rem;        
+    }
+    
+    .name p {
+        font-size: 8rem;
+    }
+    
+    .frontend p {
+        font-size: 5rem;
+    }
+
+    .animation {
+        min-width: 2500px;
+
+    }
+    
+    .social {
+        width: 500px;
+        top: 50px;
+        right: 30px;
+    }
+    .social-img img {
+        height: 120px;
+    }
+
+}
 
 @media only screen and (max-width: 1366px) {
     .side-menu {

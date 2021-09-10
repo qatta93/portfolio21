@@ -422,8 +422,87 @@ color: #F8E058;
 }
 
 
+@media only screen and (min-width: 4000px) {
+
+    .side-menu {
+        width: 800px;
+    }
+
+    .burger {
+        background-size: 200px 200px;
+        height: 200px;
+        width: 200px;
+    }
+    
+    .burger-waiter {
+
+        background-size: 490px 490px;
+        height: 490px;
+        width: 490px;
+    }
+    
+    .menu {
+        height: 800px;
+        padding: 4%;
+    }
+    
+    .menu-icons,
+    .menu-titles {
+        font-size: 70px;
+    }
+    
+    .menu-icon img {
+        height: 100px;
+        left: 30px;
+    }
+    
+    .contact {
+        left: 800px;
+    }
+    
+    .contact-text {
+        font-size: 7rem;
+    }
+    
+    .contact-form {
+        font-size: 4rem;
+    }
+
+    .form {
+        height: 700px;
+        border-radius: 25px;
+    }
+    
+    .form-name,
+    .form-email {
+        height: 200px;
+        border-radius: 25px;
+        margin-bottom: 40px !important;
+    }
+    
+    .form-text {
+        font-size: 4rem !important;
+    }
+    
+    .form-button {
+        width: 550px;
+        height: 190px;
+        font-size: 5rem;
+        margin-top: 150px!important;
+    }
 
 
+
+    .social {
+        width: 500px;
+        top: 50px;
+        right: 30px;
+    }
+    .social-img img {
+        height: 120px;
+    }
+
+}
 
 
 @media only screen and (max-width: 1366px) {

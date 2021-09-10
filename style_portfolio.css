@@ -634,7 +634,72 @@ color: #F8E058;
     }
 }
 
+@media only screen and (min-width: 4000px) {
 
+    .side-menu {
+        width: 800px;
+    }
+
+    .burger {
+        background-size: 200px 200px;
+        height: 200px;
+        width: 200px;
+    }
+    
+    .burger-waiter {
+
+        background-size: 490px 490px;
+        height: 490px;
+        width: 490px;
+    }
+    
+    .menu {
+        height: 800px;
+        padding: 4%;
+    }
+    
+    .menu-icons,
+    .menu-titles {
+        font-size: 70px;
+    }
+    
+    .menu-icon img {
+        height: 100px;
+        left: 30px;
+    }
+
+    .projects-container {
+        left: 800px;
+    }
+    
+    .project {
+        border-radius: 60px;
+    }
+    
+    .project-header {
+        font-size: 4.6rem;
+    }
+    
+    .tech {
+        font-size: 3rem;
+    }
+    
+    .luope {
+        height: 200px;
+        width: 200px;
+        right: 80px;
+        bottom: 80px;
+    }
+    .social {
+        width: 500px;
+        top: 50px;
+        right: 30px;
+    }
+    .social-img img {
+        height: 120px;
+    }
+
+}
 
 
 
