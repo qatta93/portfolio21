@@ -690,6 +690,55 @@ color: #F8E058;
         right: 80px;
         bottom: 80px;
     }
+
+    .description-title {
+        font-size: 8rem;
+        line-height: 8rem;
+        margin-bottom: 100px;
+    }
+    
+    .description-text {
+        font-size: 4em;
+    }
+    
+    .description-links-header {
+        font-size: 4rem;
+    }
+    
+    .description-links {
+        margin-top: 200px;
+    }
+    
+    .description-links-box {
+        margin-top: 60px;
+        height: 150px;
+        width: 50%;
+        left: 25%;
+    }
+    
+    .description-links-box p{
+        line-height: 150px;
+    }
+    
+    .description-links-box p a{
+        font-size: 4rem;
+    }
+
+    #pop-portfolio .description-title {
+        font-size: 9rem;
+        margin-bottom: 200px;
+    }
+    
+    #pop-portfolio .description-text {
+        font-size: 5rem;
+    }
+
+    .close {
+        height: 150px;
+        width: 150px;
+        right: 100px;
+        top: 100px;
+    }
     .social {
         width: 500px;
         top: 50px;

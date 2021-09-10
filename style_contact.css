@@ -570,7 +570,7 @@ color: #F8E058;
     }
 
     .side-menu-bcg {
-       display: none;
+       display: none !important;
     }
 
 

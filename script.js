@@ -18,6 +18,8 @@ function ShowDiv() {
   }
 
 
+
+
   //show projects details after clicking 
   
   const targetDiv1 = document.getElementById('pop-homia');
@@ -47,11 +49,15 @@ function ShowDiv() {
 
     //close projects details
 
-    const closePop = document.getElementsByClassName('projects-pop');
-    const closeBtn = document.getElementsByClassName('close');
-    closeBtn.onclick = function () {
-      closePop.style.display = "none";
-    }
+    const closePops = document.getElementsByClassName('projects-pop');
+    const closeBtns = document.getElementsByClassName('close');
+    
+    Array.from(closeBtns).forEach(function(closeBtn, i) {
+      closeBtn.onclick = function () {
+         closePops[i].style.display = "none";
+       }
+    });
+
 
     // open menu-cover
 
