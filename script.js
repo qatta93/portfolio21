@@ -52,3 +52,14 @@ function ShowDiv() {
     closeBtn.onclick = function () {
       closePop.style.display = "none";
     }
+
+    // open menu-cover
+
+    function ShowMenu() {
+      var y = document.getElementById("menu-cover");
+      if (y.style.display === "none") {
+        y.style.display = "block";
+      } else {
+        y.style.display = "none";
+      }
+    }

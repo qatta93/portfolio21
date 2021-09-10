@@ -3,6 +3,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style_portfolio.css">
+  <link rel="stylesheet" href="style_menu.css">
   <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
 </head>
 
@@ -11,7 +12,7 @@
 <main class="container">
   <div class="content-container">
     <div class="side-menu">
-      <input type="button"  onclick="ShowDiv()" class="burger" />
+      <input type="button"  onclick="ShowDiv()" class="burger" id="burger"/>
       <div class="side-menu-bcg" id="myDiv">
           <div class="burger-waiter"></div>
           <div class="menu row justify-content-center">
@@ -39,7 +40,7 @@
 
     <div class="projects-container row">
       <div class="portfolio-header-container">
-        <h1 class="portfolio-header">PORTFOLIO</h1>
+      <h1 class="portfolio-header">PORTFOLIO</h1>
       </div>
       <div class="projects-box projects-box-left col-sm-6">
         <div class="projects">
@@ -84,17 +85,17 @@
       <div class="projects-pop-container">
         <button class="close"></button>
         <div class="project-pop project-pop-1 row">
-          <div class="mobile-box col-md-3">
+          <div class="mobile-box col-sm-3 col-lg-3 col-xl-3">
             <div class="mobile-img">
               <img src="pic/homia_mobile.png" alt="mobile">
             </div>
           </div>
-          <div class="desktop-box col-md-6">
+          <div class="desktop-box col-sm-5 col-lg-6 col-xl-5">
             <div class="desktop-img">
               <img src="pic/homia_desktop.png" alt="desktop">
             </div>
           </div>
-          <div class="description-box col-md-3">
+          <div class="description-box col-sm-4 col-lg-3 col-xl-4">
             <div class="description-container">
               <div class="description-title">
                 <p>Web Prototype</p>
@@ -113,10 +114,10 @@
                     <p><a href="https://xd.adobe.com/view/a926c21d-5134-4b17-86dd-ed51f76a4213-fc75/screen/9211be44-5f69-46ea-a140-6cb02c9a8a0a" target="_blank"> mobile</a></p>
                   </div>
                   <div class="description-links-box">
-                    <p><a href="https://xd.adobe.com/view/6ad123ba-b7f8-4886-9436-3960e95076c2-3f82/" target="_blank">desktop</a></p>
+                    <p><a href="https://xd.adobe.com/view/6ad123ba-b7f8-4886-9436-3960e95076c2-3f82/" target="_blank">tablet</a></p>
                   </div>
                   <div class="description-links-box">
-                    <p>desktop</p>
+                    <p><a href="https://xd.adobe.com/view/6ad123ba-b7f8-4886-9436-3960e95076c2-3f82/" target="_blank">desktop</a></p>
                   </div>
                 </div>
               </div>
@@ -131,13 +132,13 @@
   <div class="projects-pop-container">
     <button class="close"></button>
     <div class="project-pop project-pop-1 row d-flex justify-content-center">
-      <div class="desktop-box col-md-6">
+      <div class="desktop-box col-sm-6 col-lg-6" id="desktop-box-scandy">
         <div class="desktop-img">
           <img src="" alt="desktop">
         </div>
       </div>
-      <div class="description-box col-md-3">
-        <div class="description-container">
+      <div class="description-box col-sm-5 col-lg-3">
+        <div class="description-container" id="description-container-scandy">
           <div class="description-title">
             <p>ScandyHouse</p>
           </div>
@@ -163,8 +164,8 @@
   <div class="projects-pop-container">
     <button class="close"></button>
     <div class="project-pop project-pop-1 row d-flex justify-content-center">
-      <div class="description-box col-md-4">
-        <div class="description-container">
+      <div class="description-box col-s-6 col-md-5 col-lg-4">
+        <div class="description-container" id="description-container-portfolio">
           <div class="description-title">
             <p>PORTFOLIO</p>
           </div>
@@ -185,12 +186,12 @@
   <div class="projects-pop-container">
     <button class="close"></button>
     <div class="project-pop project-pop-1 row d-flex justify-content-center">
-      <div class="desktop-box col-md-6">
+      <div class="desktop-box col-md-9 col-lg-7" id="desktop-box-budget">
         <div class="desktop-img" style="overflow-y: hidden;">
-          <img src="pic/budget.png" alt="desktop">
+          <img src="pic/budget.png" alt="desktop" id="budget-img">
         </div>
       </div>
-      <div class="description-box col-md-3">
+      <div class="description-box col-md-3 col-lg-3" id="descrpition-box-budget">
         <div class="description-container">
           <div class="description-title">
             <p>Budget App</p>
@@ -215,31 +216,37 @@
 </div>
 
 
-    <!-- <div class="menu-cover">
-      <div class="menu-cover-list row">
-        <div class="menu-cover-img col-3">
-          <img src="pic/mail.png" alt="conact">
-          <img src="pic/portfolio.png" alt="portfolio">
-          <img src="pic/curriculum.png" alt="aboutme">
-          <img src="pic/home.png" alt="home">
-        </div>
-        <div class="menu-cover-text col-9">
-          <p>contact</p>
-          <p>portfolio</p>
-          <p>about me</p>
-          <p>home</p>
-        </div>
+<!-- MENU COVER -->
+  <div class="menu-cover" id="menu-cover">
+    <div class="menu-cover-list row">
+      <div class="menu-cover-img col-3">
+        <a href="contact.html"><img src="pic/mail.png" alt="contact"></a>
+        <a href="portfolio.html"><img src="pic/portfolio.png" alt="portfolio"></a>
+        <a href="aboutme.html"><img src="pic/curriculum.png" alt="aboutme"></a>
+        <a href="home.html"><img src="pic/home.png" alt="home"></a>
       </div>
-      <div class="menu-cover-waiter">
-        <img src="pic/burger_waiter.png" alt="burger">
+      <div class="menu-cover-text col-9">
+        <a href="contact.html"><p>contact</p></a>
+        <a href="portfolio.html"><p>portfolio</p></a>
+        <a href="aboutme.html"><p>about me</p></a>
+        <a href="home.html"><p>home</p></a>
       </div>
-    </div> -->
-
-
+    </div>
+    <div class="menu-cover-waiter">
+      <img src="pic/burger_waiter.png" alt="burger">
+    </div>
     <div class="social row ">
-      <div class="social-img col-4"><a href="https://github.com/qatta93" target="_blank"><img src="pic/github.png" alt="github"></a></div>
-      <div class="social-img col-4"><a href="https://www.linkedin.com/in/patrycjapanasiuk/" target="_blank"><img src="pic/linkedin.png" alt="linkedin"></a></div>
-      <div class="social-img col-4"><a href="https://www.instagram.com/__qatta/" target="_blank"><img src="pic/instagram.png" alt="instagram"></a></div>
+      <div class="social-img social-img-white col-4"><a href="https://github.com/qatta93" target="_blank"><img src="pic/github_white.png" alt="github"></a></div>
+      <div class="social-img social-img-white col-4"><a href="https://www.linkedin.com/in/patrycjapanasiuk/" target="_blank"><img src="pic/linkedin_white.png" alt="linkedin"></a></div>
+      <div class="social-img social-img-white col-4"><a href="https://www.instagram.com/__qatta/" target="_blank"><img src="pic/instagram_white.png" alt="instagram"></a></div>
+    </div>
+  </div>
+
+<!-- SOCIAL -->
+    <div class="social row ">
+      <div class="social-img social-img-grey col-4"><a href="https://github.com/qatta93" target="_blank"><img src="pic/github.png" alt="github"></a></div>
+      <div class="social-img social-img-grey col-4"><a href="https://www.linkedin.com/in/patrycjapanasiuk/" target="_blank"><img src="pic/linkedin.png" alt="linkedin"></a></div>
+      <div class="social-img social-img-grey col-4"><a href="https://www.instagram.com/__qatta/" target="_blank"><img src="pic/instagram.png" alt="instagram"></a></div>
     </div>
 
   </div>

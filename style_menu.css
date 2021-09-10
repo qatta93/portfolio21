@@ -1,0 +1,144 @@
+
+
+
+@media only screen and (max-width: 1024px) {
+
+    #menu-cover {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        background-color: #2E3032;
+        opacity: 0.95;
+        display: none;
+    }
+    
+    .menu-cover-list {
+        height: 70%;
+        width: 50%;
+        margin: 0 auto !important;
+        padding-left: 10%;
+        position: relative;
+        display: block !important;
+    }
+    
+    .menu-cover-img,
+    .menu-cover-text {
+        height: 350px;
+        position: absolute;
+        top: 30%;
+        width: 100%;
+    }
+    
+    .menu-cover-text p {
+        line-height: 50px;
+        margin: 10px 0;
+        width: 100%;
+    }
+    
+    .menu-cover-img img,
+    .menu-cover-img a {
+        height: 50px;
+        margin: 15px 0;
+    }
+    
+    .menu-cover-waiter {
+        height: 30%;
+        text-align: center;
+    }
+    
+    .menu-cover-text {
+        height: 300px;
+        padding-left: 40% !important;
+    }
+    
+    .menu-cover-text a{
+        text-decoration: none;
+    }
+    
+    .menu-cover-text p {
+        font-size: 1.7rem;
+        color: #EEEEEE;
+        height: 23%;
+    }
+    
+    .menu-cover-waiter img {
+        height: 60%;
+    }
+    
+    .social-img-white {
+        z-index: 9;
+    }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .menu-cover-list {
+        width: 60%;
+    }
+    
+    .menu-cover-img img,
+    .menu-cover-img a {
+        height: 45px;
+        margin: 17px 0;
+    }
+    
+    .menu-cover-text p {
+        font-size: 1.4rem;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .menu-cover-list {
+        width: 60%;
+    }
+    
+    .menu-cover-img img,
+    .menu-cover-img a {
+        height: 40px;
+        margin: 17px 0;
+    }
+    
+    .menu-cover-text p {
+        font-size: 1.2rem;
+        line-height: 45px;
+        margin: 9px 0;
+    }
+
+    .menu-cover-waiter img {
+        height: 50%;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .menu-cover-list {
+        width: 80%;
+        padding-left: 20%;
+    }
+    
+    .menu-cover-img img,
+    .menu-cover-img a {
+        height: 35px;
+        margin: 17px 0;
+    }
+    
+    .menu-cover-text p {
+        font-size: 1.2rem;
+        line-height: 55px;
+        margin: 3px 0;
+    }
+
+    .menu-cover-waiter img {
+        height: 50%;
+    }
+
+    .menu-cover-text {
+        padding-left: 35% !important;
+    }
+}

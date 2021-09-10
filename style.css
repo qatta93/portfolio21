@@ -248,43 +248,47 @@ html {
 
 /************************************************************ MEDIA QUERY */
 
+
 @media only screen and (min-width: 1920px) {
+
     .side-menu {
-        width: 300px;
+        width: 400px;
     }
-    
+
     .burger {
-        background-size: 70px 70px;
-        height: 70px;
-        width: 70px;
+        background-size: 80px 80px;
+        height: 80px;
+        width: 80px;
     }
     
     .burger-waiter {
-        background-size: 177px 177px;
-        left: 43px;
-        top: 50px;
-        height: 177px;
-        width: 177px;
+
+        background-size: 200px 200px;
+        height: 200px;
+        width: 200px;
     }
     
     .menu {
-        height: 300px;
+        height: 400px;
+        padding: 4%;
     }
     
     .menu-icons,
     .menu-titles {
-        font-size: 30px;
+        font-size: 35px;
     }
     
     .menu-icon img {
-        height: 45px;
+        height: 50px;
+        left: 30px;
     }
     
     .social {
-        width: 250px;
+        width: 330px;
+        top: 20px;
     }
     .social-img img {
-        height: 50px;
+        height: 60px;
     }
     .presentation {
         height: 30%;
@@ -311,6 +315,80 @@ html {
     .animation {
         max-width: 900px;
     }
+}
+
+@media only screen and (min-width: 3000px) {
+
+    .side-menu {
+        width: 500px;
+    }
+
+    .burger {
+        background-size: 100px 100px;
+        height: 200px;
+        width: 200px;
+    }
+    
+    .burger-waiter {
+
+        background-size: 230px 230px;
+        height: 230px;
+        width: 230px;
+    }
+    
+    .menu {
+        height: 500px;
+        padding: 4%;
+    }
+    
+    .menu-icons,
+    .menu-titles {
+        font-size: 40px;
+    }
+    
+    .menu-icon img {
+        height: 60px;
+        left: 30px;
+    }
+    
+    .presentation {
+        height: 40%;
+        left: 600px;
+    }
+    
+    
+    .hello {
+        height: 20%;
+        position: relative;
+    }
+    
+    .hello p {        
+        font-size: 4rem;        
+    }
+    
+    .name p {
+        font-size: 4rem;
+    }
+    
+    
+    
+    .frontend p {
+        font-size: 3rem;
+    }
+
+    .animation {
+        min-width: 1700px;
+
+    }
+    
+    .social {
+        width: 350px;
+        top: 20px;
+    }
+    .social-img img {
+        height: 70px;
+    }
+
 }
 
 

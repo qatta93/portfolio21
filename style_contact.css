@@ -61,6 +61,10 @@ html {
     z-index: 10;
 }
 
+.contact-header-container {
+    display: none;
+}
+
 .burger-waiter {
     background-image: url(pic/burger_waiter.png);
     background-repeat: no-repeat;
@@ -259,19 +263,54 @@ color: #F8E058;
 
 /************************************************************ MEDIA QUERY */
 
+
 @media only screen and (min-width: 1920px) {
 
+    .side-menu {
+        width: 400px;
+    }
+
+    .burger {
+        background-size: 80px 80px;
+        height: 80px;
+        width: 80px;
+    }
+    
+    .burger-waiter {
+
+        background-size: 200px 200px;
+        height: 200px;
+        width: 200px;
+    }
+    
+    .menu {
+        height: 400px;
+        padding: 4%;
+    }
+    
+    .menu-icons,
+    .menu-titles {
+        font-size: 35px;
+    }
+    
+    .menu-icon img {
+        height: 50px;
+        left: 30px;
+    }
+    
+
+
     .contact {
-        left: 300px;
+        left: 400px;
     }
     
     .contact-text {
-        font-size: 2.8rem;
+        font-size: 3rem;
         font-weight: 500;
     }
     
     .contact-form {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
     
     .form-name,
@@ -280,34 +319,110 @@ color: #F8E058;
     }
     
     .form-text {
-        font-size: 1.3rem !important;
+        font-size: 1.5rem !important;
+        height: 300px;
     }
     
     .form-button {
-        width: 170px;
-        height: 60px;
-        font-size: 1.7rem;
-        margin-top: 30px!important;
-    }
-
-    .side-menu {
-        width: 300px;
+        width: 350px;
+        height: 90px;
+        font-size: 2rem;
+        margin-top: 60px!important;
     }
     
-    .burger {
-        background-size: 70px 70px;
-        height: 70px;
-        width: 70px;
-    }
     
     .social {
-        width: 250px;
+        width: 300px;
+        top: 20px;
     }
     .social-img img {
-        height: 50px;
+        height: 55px;
     }
 
 }
+
+@media only screen and (min-width: 3000px) {
+
+    .side-menu {
+        width: 500px;
+    }
+
+    .burger {
+        background-size: 100px 100px;
+        height: 200px;
+        width: 200px;
+    }
+    
+    .burger-waiter {
+
+        background-size: 230px 230px;
+        height: 230px;
+        width: 230px;
+    }
+    
+    .menu {
+        height: 500px;
+        padding: 4%;
+    }
+    
+    .menu-icons,
+    .menu-titles {
+        font-size: 40px;
+    }
+    
+    .menu-icon img {
+        height: 60px;
+        left: 30px;
+    }
+    
+
+
+    .contact {
+        left: 500px;
+    }
+    
+    .contact-text {
+        font-size: 3.5rem;
+        font-weight: 500;
+    }
+    
+    .contact-form {
+        font-size: 2rem;
+    }
+
+    .form {
+        height: 500px;
+    }
+    
+    .form-name,
+    .form-email {
+        height: 90px;
+    }
+    
+    .form-text {
+        font-size: 2rem !important;
+    }
+    
+    .form-button {
+        width: 350px;
+        height: 90px;
+        font-size: 2.5rem;
+        margin-top: 60px!important;
+    }
+    
+    
+    .social {
+        width: 350px;
+        top: 20px;
+    }
+    .social-img img {
+        height: 70px;
+    }
+
+}
+
+
+
 
 
 
@@ -360,6 +475,14 @@ color: #F8E058;
 /******************** TABLET LANDSCAPE */
 
 
+@media only screen and (max-width: 1060px) {
+    .col-lg-6 {
+        width: 100% !important;
+    }
+
+}
+
+
 @media only screen and (max-width: 1024px) {
 
     .content-container {
@@ -368,12 +491,9 @@ color: #F8E058;
     }
 
     .side-menu-bcg {
-       opacity: 0;
+       display: none;
     }
 
-    .burger-waiter {
-        opacity: 0;
-    }
 
     .burger {
         opacity: 1;
@@ -396,7 +516,6 @@ color: #F8E058;
         display: block;
         width: 100%;
         left: 0;
-        padding-top: 10%;
     }
 
     .contact-container {
@@ -404,19 +523,18 @@ color: #F8E058;
     }
 
     .contact-box {
-        height: 60%;
+        height: 300px;
         padding: 0 !important;
     }
 
-    .contact-container div:first-of-type {
-        height: 30%;
+    .contact-box-form {
+        height: 900px;
     }
 
     .contact-form {
         height: 90% !important;
         font-size: 1.3rem;
         width: 580px;
-        margin-top: 5%;
     }
     
     .form-name,
@@ -433,6 +551,23 @@ color: #F8E058;
         height: 60px;
         border-radius: 15px;
         margin-top: 10px;
+    }
+
+    .contact-header-container {
+        display: block;
+        height: 150px;
+        position: relative;
+    }
+
+    .contact-header {
+        position: absolute;
+        display: block;
+        width: 150px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-decoration: underline solid #F8E058;
     }
 }
 
@@ -451,10 +586,14 @@ color: #F8E058;
         top: 150px;
     }
 
+    .contact-box-form {
+        height: 600px;
+    }
+
     .contact-form {
         font-size: 1.2rem;
         width: 450px;
-        margin-top: 60px;
+        margin-top: 20px;
     }
     
     .form-name,
@@ -467,29 +606,26 @@ color: #F8E058;
         height: 200px;
     }
 
-    .contact-header {
-        width: 150px;
-        margin: 0 auto;
-        margin-bottom: 10%;
-    }
     
     .form-button {
         margin-top: 30px!important;
     }
+
+    
 }
 
 
 
 @media only screen and (max-width: 650px) {
+    
 
     .contact-text {
         font-size: 1.4rem;
-        top: 100px;
+        top: 150px;
     }
 
     .contact-form {
         width: 400px;
-        margin-top: 30px;
     }
     
     .form-name,
@@ -504,6 +640,14 @@ color: #F8E058;
     
     .form {
         margin: 10px 0 !important;
+    }
+
+    .contact-box {
+        height: 200px;
+    }
+
+    .contact-box-form {
+        height: 500px;
     }
 
 }
@@ -539,6 +683,14 @@ color: #F8E058;
         width: 300px;
         margin-top: 70px;
     }
+
+    .contact-box {
+        height: 170px;
+    }
+
+    .contact-box-form {
+        height: 500px;
+    }
     
     .form-name,
     .form-email {
@@ -548,7 +700,7 @@ color: #F8E058;
     
     .form-text {
         font-size: 1.1rem !important;
-        height: 180px;
+        height: 150px;
     }
     
     .form {
@@ -562,6 +714,7 @@ color: #F8E058;
         margin-top: 10px!important;
         margin-bottom: 40px!important;
     }
+
 
     .social {
         height: 55px;

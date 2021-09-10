@@ -1,0 +1,258 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style_aboutme.css">
+  <link rel="stylesheet" href="style_menu.css">
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+  
+<main class="container">
+  <div class="content-container">
+    <div class="side-menu">
+      <input type="button"  onclick="ShowDiv()" class="burger" />
+      <div class="side-menu-bcg" id="myDiv">
+          <div class="burger-waiter"></div>
+          <div class="menu row justify-content-center">
+            <div class="menu-icons-box col-5">
+              <ul class="menu-icons"> 
+              <li class="menu-icon"><img src="pic/mail.png" alt="contact"></li>
+              <li class="menu-icon"><a href="portfolio.html"><img src="pic/portfolio.png" alt="portfolio"></a></li>
+              <li class="menu-icon"><a href="curriculum.html"><img src="pic/curriculum.png" alt="curriculum"></a></li>
+              <li class="menu-icon"><a href="index.html"><img src="pic/home.png" alt="home"></a></li>
+              </ul> 
+            </div>
+            <div class="menu-titles-box col-6">
+              <ul class="menu-titles"> 
+                <li class="menu-title"><a href="contact.html"><p>contact</p></a></li>
+                <li class="menu-title"><a href="portfolio.html"><p>portfolio</p></a></li>
+                <li class="menu-title"><p>about me</p></li>
+                <li class="menu-title"><a href="index.html"><p>home</p></a></li>
+              </ul> 
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- ABOUT - LG -->
+
+    <!-- <div class="about-lg">
+      <div class="about-container-lg row">
+        <div class="about-box-lg col-lg-6">
+          <div class="about-left-lg">
+            <div class="about-left-lg-pic">
+              <img src="pic/me.jpg" alt="me" class="question1-pic">
+              <img src="pic/travel.jpg" alt="me" class="question2-pic">
+              <img src="pic/tech.jpg" alt="me" class="question3-pic">
+            </div>
+            <div class="about-left-lg-questions">
+              <div class="about-left-lg-question question-selected">
+                <div class="question-box-lg question1">
+                  <div class="question-header-lg question-selected-header">Who am I?</div>
+                  <div class="question-add-lg question-selected-add">About the person I have become.</div>
+                </div>
+              </div>
+                <div class="about-left-lg-question question2">
+                  <div class="question-box-lg">
+                  <div class="question-header-lg">Hobbies & Dreams</div>
+                  <div class="question-add-lg">The things that make me feel alive.</div>
+                </div>
+              </div>
+              <div class="about-left-lg-question question3">
+                <div class="question-box-lg">
+                  <div class="question-header-lg">Tech Stack & Experience</div>
+                  <div class="question-add-lg">A few words about my skills.</div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div> -->
+        <!-- QUESTION1 -->
+        <!-- <div class="about-box-lg answer1-lg col-lg-6">
+          <div class="about-right-lg">
+            <img src="pic/frame_big.png" class="frame-lg" alt="frame">
+            <div class="about-right-text-lg answer-lg">
+              <h1>Who am I?</h1>
+              <p>My name is Patrycja,  I am 27 years old UI/UX and frontend enthusiast. I am a civil engineer and architect by education.</p>
+              <p> In 2019 I has started learning programming. It was when I began noticing how <b>automation speeds up my work and improves efficiency.</b></p>
+              <p>In 2020, I created a brand of house designs for sale from scratch. I was trying
+                to play the role of my potential clients and I realized how important it is to <b>present information in a simple and intuitive way.</b></p>
+              <p>This is how my career path has began turning into frontend development.</p>
+            </div>
+            </div>
+        </div> -->
+
+        <!-- QUESTION2 -->
+        <!-- <div class="about-box-lg answer2-lg col-lg-6">
+          <div class="about-right-lg">
+            <img src="pic/frame_big.png" class="frame-lg" alt="frame">
+            <div class="about-right-text-lg answer-lg">
+              <h1>Hobbies & Dreams</h1>
+              <p><b>Travelling, sports, psychology.</b> These 3 words are the most powerful for me.</p>
+              <p>I have been to 30 countries on 4 continents so far. I would like to visit the whole World. Travelling gives me an opportunity of being aware of my own abilities as it pushes limits.  It is a salvage from an ordinary life. It helps to show all facets of humanity. <b> One of my dreams is to volunteer in Africa.</b> </p>
+              <p>I have been doing sports since I can remember. <b> Let us have a game of table soccer or table tennis!</b></p>
+              <p>I have always been interested in people and the genesis of their behavior.</p>
+            </div>
+            </div>
+        </div> -->
+        <!-- QUESTION3 -->
+        <!-- <div class="about-box-lg answer3-lg col-lg-6">
+          <div class="about-right-lg">
+            <img src="pic/frame_big.png" class="frame-lg" alt="frame">
+            <div class="about-right-text-lg answer-lg">
+              <h1 id="tech-header">Tech Stack & Experience</h1>
+              <p>My programming adventure has began in 2019. I have around a year of commercial experience.</p>
+              <p>In the future, I would like to create an application that generates automatic house cost estimates based on databases from contractors. Potential investors would design houses in 3D, almost like in The Sims! I  was thinking of using Rhinoceros 3D, Grasshopper, C#, Shapediver and JavaScript for this purpose              </p>
+              <div class="tech-col-lg row">
+                <div class="tech-lg col-6">
+                  <p>Front-end:</p>
+                  <p>HTML5</p>
+                  <p>CSS3</p>
+                  <p>SASS</p>
+                  <p>JavaScript</p>
+                  <p>RWD</p>
+                </div>
+                <div class="others-lg col-6">
+                  <p>Others:</p>
+                  <p>Adobe XD</p>
+                  <p>PhotoShop</p>
+                  <p>CorelDraw</p>
+                  <p>3D modelling</p>
+                  <p>Adobe After Effects</p>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div> -->
+
+<!-- ABOUT - SM -->
+
+<div class="about-sm">
+    <div class="about-header-container">
+      <h1 class="about-header">ABOUT ME</h1>
+    </div>
+    <div class="about-container-sm row">
+    <div class="about-box-sm col-sm-6">
+      <div class="about-left-sm">
+        <div class="question-box-sm" id="question-selected">
+          <div class="question-box-text-sm">
+            <div class="question-header-sm" id="question-selected-header">Who am I?</div>
+            <div class="question-add-sm" id="question-selected-add">About the person I have become.</div>
+          </div>
+        </div>
+        <div class="question-box-sm">
+          <div class="question-box-text-sm">
+            <div class="question-header-sm">Hobbies & Dreams</div>
+            <div class="question-add-sm">The things that make me feel alive.</div>
+          </div>
+        </div>
+        <div class="question-box-sm">
+          <div class="question-box-text-sm">
+           <div class="question-header-sm">Tech Stack & Experience</div>
+            <div class="question-add-sm">A few words about my skills.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-box-sm col-sm-6">
+      <div class="about-right-sm">
+        <div class="about-right-sm-pic">
+          <img src="pic/me.jpg" alt="me" class="question1-pic">
+          <!-- <img src="pic/travel.jpg" alt="me" class="question2-pic">
+          <img src="pic/tech.jpg" alt="me" class="question3-pic"> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="about-container-text-sm">
+    <img src="pic/frame_sm.png" alt="frame">
+    <div class="about-text-sm answer1-sm">
+      <h1>Who am I?</h1>
+      <p>My name is Patrycja,  I am 27 years old UI/UX and frontend enthusiast. I am a civil engineer and architect by education.</p>
+      <p> In 2019 I has started learning programming. It was when I began noticing how <b>automation speeds up my work and improves efficiency.</b></p>
+      <p>In 2020, I created a brand of house designs for sale from scratch. I was trying
+        to play the role of my potential clients and I realized how important it is to <b>present information in a simple and intuitive way.</b></p>
+      <p>This is how my career path has began turning into frontend development.</p>
+    </div>
+    <div class="about-text-sm answer2-sm">
+      <h1>Hobbies & Dreams</h1>
+      <p><b>Travelling, sports, psychology.</b> These 3 words are the most powerful for me.</p>
+      <p>I have been to 30 countries on 4 continents so far. I would like to visit the whole World. Travelling gives me an opportunity of being aware of my own abilities as it pushes limits.  It is a salvage from an ordinary life. It helps to show all facets of humanity. <b> One of my dreams is to volunteer in Africa.</b> </p>
+      <p>I have been doing sports since I can remember. <b> Let us have a game of table soccer or table tennis!</b></p>
+      <p>I have always been interested in people and the genesis of their behavior.</p>
+    </div>
+    <div class="about-text-sm answer3-sm">
+      <h1 id="tech-header">Tech Stack & Experience</h1>
+      <p>My programming adventure has began in 2019. I have around a year of commercial experience.</p>
+      <p>In the future, I would like to create an application that generates automatic house cost estimates based on databases from contractors. Potential investors would design houses in 3D, almost like in The Sims! I  was thinking of using Rhinoceros 3D, Grasshopper, C#, Shapediver and JavaScript for this purpose              </p>
+      <div class="tech-col-sm row">
+        <div class="tech-sm col-6">
+          <p>Front-end:</p>
+          <p>HTML5</p>
+          <p>CSS3</p>
+          <p>SASS</p>
+          <p>JavaScript</p>
+          <p>RWD</p>
+        </div>
+        <div class="others-sm col-6">
+          <p>Others:</p>
+          <p>Adobe XD</p>
+          <p>PhotoShop</p>
+          <p>CorelDraw</p>
+          <p>3D modelling</p>
+          <p>Adobe After Effects</p>
+          </br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- MENU COVER -->
+  <div class="menu-cover" id="menu-cover">
+    <div class="menu-cover-list row">
+      <div class="menu-cover-img col-3">
+        <a href="contact.html"><img src="pic/mail.png" alt="contact"></a>
+        <a href="portfolio.html"><img src="pic/portfolio.png" alt="portfolio"></a>
+        <a href="aboutme.html"><img src="pic/curriculum.png" alt="aboutme"></a>
+        <a href="home.html"><img src="pic/home.png" alt="home"></a>
+      </div>
+      <div class="menu-cover-text col-9">
+        <a href="contact.html"><p>contact</p></a>
+        <a href="portfolio.html"><p>portfolio</p></a>
+        <a href="aboutme.html"><p>about me</p></a>
+        <a href="home.html"><p>home</p></a>
+      </div>
+    </div>
+    <div class="menu-cover-waiter">
+      <img src="pic/burger_waiter.png" alt="burger">
+    </div>
+    <div class="social row ">
+      <div class="social-img social-img-white col-4"><a href="https://github.com/qatta93" target="_blank"><img src="pic/github_white.png" alt="github"></a></div>
+      <div class="social-img social-img-white col-4"><a href="https://www.linkedin.com/in/patrycjapanasiuk/" target="_blank"><img src="pic/linkedin_white.png" alt="linkedin"></a></div>
+      <div class="social-img social-img-white col-4"><a href="https://www.instagram.com/__qatta/" target="_blank"><img src="pic/instagram_white.png" alt="instagram"></a></div>
+    </div>
+  </div>
+
+<!-- SOCIAL-->
+    <div class="social row ">
+      <div class="social-img col-4"><a href="https://github.com/qatta93" target="_blank"><img src="pic/github.png" alt="github"></a></div>
+      <div class="social-img col-4"><a href="https://www.linkedin.com/in/patrycjapanasiuk/" target="_blank"><img src="pic/linkedin.png" alt="linkedin"></a></div>
+      <div class="social-img col-4"><a href="https://www.instagram.com/__qatta/" target="_blank"><img src="pic/instagram.png" alt="instagram"></a></div>
+    </div>
+
+  </div>
+</main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="lottie.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
