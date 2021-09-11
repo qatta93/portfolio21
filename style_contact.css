@@ -562,7 +562,7 @@ color: #F8E058;
 }
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1060px) {
 
     .content-container {
         min-height: 700px;

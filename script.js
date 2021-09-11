@@ -8,6 +8,8 @@ var animation = bodymovin.loadAnimation({
 })
 
 
+  //show side menu
+
 function ShowDiv() {
     var x = document.getElementById("myDiv");
     if (x.style.display === "none") {
@@ -16,8 +18,6 @@ function ShowDiv() {
       x.style.display = "none";
     }
   }
-
-
 
 
   //show projects details after clicking 
@@ -69,3 +69,16 @@ function ShowDiv() {
         y.style.display = "none";
       }
     }
+
+    // change questions - about me
+
+    const question = document.getElementsByClassName('about-left-lg-question');
+    const picture = document.getElementsByClassName('question-pic');
+    const answer = document.getElementsByClassName('about-right-text-lg');
+    
+    Array.from(question).forEach(function(change, i) {
+      change.onclick = function () {
+         picture[i].style.display = "block";
+         answer[i].style.display = "block";
+       }
+    });

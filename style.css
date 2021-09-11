@@ -59,7 +59,6 @@ html {
     width: 60px;
     background-color: transparent;
     border: none;
-    z-index: 10;
     -webkit-animation-name: spaceboots;
 	-webkit-animation-duration: 2.5s;
 	-webkit-transform-origin:50% 50%;
@@ -535,15 +534,14 @@ html {
 
 /******************** TABLET LANDSCAPE */
 
-
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1060px) {
 
     .content-container {
         min-height: 700px;
     }
 
     .side-menu-bcg {
-       opacity: 0;
+       display: none;
     }
 
     .burger-waiter {
@@ -613,6 +611,7 @@ html {
         bottom: 15%;                
         transform: translate(0, -15%);
         height: 55%;
+        right: 20%;
     }
 }
 
@@ -653,6 +652,7 @@ html {
         transform: translate(0, -30%);
         height: 70%;
         min-width: 800px;
+        right: 10%;
     }
 }
 
@@ -679,6 +679,7 @@ html {
         transform: translate(0, -20%);
         height: 50%;
         min-width: 800px;
+        right: -9%;
     }
 }
 
@@ -749,5 +750,6 @@ html {
         min-width: 700px;
         bottom: 10%;                
         transform: translate(0, -10%);
+        right: -20%;
     }
 }

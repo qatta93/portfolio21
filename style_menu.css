@@ -1,7 +1,7 @@
 
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1060px) {
 
     #menu-cover {
         width: 100vw;
@@ -120,7 +120,7 @@
 @media only screen and (max-width: 480px) {
     .menu-cover-list {
         width: 80%;
-        padding-left: 20%;
+        padding-left: 15%;
     }
     
     .menu-cover-img img,

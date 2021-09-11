@@ -12,7 +12,8 @@
 <main class="container">
   <div class="content-container">
     <div class="side-menu">
-      <input type="button"  onclick="ShowDiv()" class="burger" id="burger"/>
+      <input type="button"  onclick="ShowDiv()" class="burger burger-menu" />
+      <input type="button"  onclick="ShowMenu()" class="burger burger-menu-cover" />
       <div class="side-menu-bcg" id="myDiv">
           <div class="burger-waiter"></div>
           <div class="menu row justify-content-center">
@@ -218,6 +219,8 @@
 
 <!-- MENU COVER -->
   <div class="menu-cover" id="menu-cover">
+    <input type="button"  onclick="ShowDiv()" class="burger burger-menu" />
+    <input type="button"  onclick="ShowMenu()" class="burger burger-menu-cover" />
     <div class="menu-cover-list row">
       <div class="menu-cover-img col-3">
         <a href="contact.html"><img src="pic/mail.png" alt="contact"></a>

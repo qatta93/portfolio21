@@ -255,6 +255,7 @@ color: #F8E058;
     background-size: cover;
     background-color: transparent;
     border: none;
+    z-index: 999;
 }
 
 .project-pop {
@@ -788,6 +789,11 @@ color: #F8E058;
     .menu-icon img {
         height: 35px;
     }
+
+    .project-img img {
+        max-height: 70%;
+        max-width: 100%;
+    }
     
     .social {
         width: 170px;
@@ -801,7 +807,7 @@ color: #F8E058;
 /******************** TABLET LANDSCAPE 1024x768*/
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1060px) {
 
     .content-container {
         overflow-y: hidden;
@@ -890,7 +896,8 @@ color: #F8E058;
     }
     
     .project-img img {
-        height: 75%;
+        max-height: 70%;
+        max-width: 100%;
     }
 
     .menu {
