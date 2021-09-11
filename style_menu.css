@@ -11,6 +11,7 @@
         background-color: #2E3032;
         opacity: 0.95;
         display: none;
+        z-index: 99999999999;
     }
     
     .menu-cover-list {

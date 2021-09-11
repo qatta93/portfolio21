@@ -63,7 +63,7 @@ html {
     -webkit-animation-name: spaceboots;
 	-webkit-animation-duration: 2.5s;
 	-webkit-transform-origin:50% 50%;
-	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: 10s;
 	-webkit-animation-timing-function: linear;
 }
 
