@@ -7,7 +7,6 @@ var animation = bodymovin.loadAnimation({
     path: 'data.json'
 })
 
-
   //show side menu
 
 function ShowDiv() {
@@ -19,9 +18,8 @@ function ShowDiv() {
     }
   }
 
-
   //show projects details after clicking 
-  
+
   const targetDiv1 = document.getElementById('pop-homia');
   const btn1 = document.getElementById("project1");
   btn1.onclick = function () {
@@ -45,7 +43,6 @@ function ShowDiv() {
   btn4.onclick = function () {
     targetDiv4.style.display = "block"
   }
-
 
     //close projects details
 
@@ -76,6 +73,8 @@ function ShowDiv() {
     const picture = document.getElementsByClassName('question-pic');
     const answer = document.getElementsByClassName('about-right-text-lg');
     
+    console.log("AAA");
+
     Array.from(question).forEach(function(change, i) {
       change.onclick = function () {
          picture[i].style.display = "block";

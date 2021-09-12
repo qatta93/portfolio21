@@ -458,6 +458,11 @@ color: #F8E058;
     display: none;
 }
 
+.question2-pic {
+    height: 100%;
+    width: 150%;
+}
+
 
 .tech-sm p:first-child,
 .others-sm p:first-child {
