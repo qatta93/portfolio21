@@ -41,6 +41,7 @@ html {
     position: relative;
 }
 
+
 .side-menu-bcg {
     background-color: #4D535F;
     height: 100%;
@@ -64,6 +65,14 @@ html {
 	-webkit-transform-origin:50% 50%;
 	-webkit-animation-iteration-count: 10s;
 	-webkit-animation-timing-function: linear;
+}
+
+.burger-menu {
+    display: block;
+}
+
+.burger-menu-cover {
+    display: none;
 }
 
 @-webkit-keyframes spaceboots {
@@ -541,7 +550,7 @@ html {
     }
 
     .side-menu-bcg {
-       display: none;
+       display: none !important;
     }
 
     .burger-waiter {
@@ -557,7 +566,13 @@ html {
         width: 50x;
     }
 
+    .burger-menu {
+        display: none;
+    }
 
+    .burger-menu-cover {
+        display: block;
+    }
 
     .menu {
         opacity: 0;

@@ -36,6 +36,10 @@
         margin: 10px 0;
         width: 100%;
     }
+
+    .menu-cover-text p:hover {
+        color: #F8E058;
+    }
     
     .menu-cover-img img,
     .menu-cover-img a {

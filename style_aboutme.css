@@ -64,6 +64,14 @@ html {
     z-index: 10;
 }
 
+.burger-menu {
+    display: block;
+}
+
+.burger-menu-cover {
+    display: none;
+}
+
 .contact-header-container {
     display: none;
 }
@@ -952,6 +960,14 @@ color: #F8E058;
         top: 20px;
         height: 50px;
         width: 50x;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .burger-menu-cover {
+        display: block;
     }
 
     .menu {
