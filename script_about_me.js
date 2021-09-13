@@ -1,28 +1,5 @@
 
 
-  //show side menu
-
-function ShowDiv() {
-    var x = document.getElementById("myDiv");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
-
-
-    // open menu-cover
-
-    function ShowMenu() {
-      var y = document.getElementById("menu-cover");
-      if (y.style.display === "block") {
-        y.style.display = "none";
-      } else {
-        y.style.display = "block";
-      }
-    }
-
     // change questions - about me
 
         // add selected class to the active button
