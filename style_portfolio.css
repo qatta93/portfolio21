@@ -530,6 +530,10 @@ color: #F8E058;
         height: 200px;
         width: 200px;
     }
+
+    .burger-menu-cover {
+        display: none;
+    }
     
     .burger-waiter {
 
@@ -654,6 +658,10 @@ color: #F8E058;
         height: 200px;
         width: 200px;
     }
+
+    .burger-menu-cover {
+        display: none;
+    }
     
     .burger-waiter {
 
@@ -775,6 +783,10 @@ color: #F8E058;
         top: 40px;
         height: 50px;
         width: 50px;
+    }
+
+    .burger-menu-cover {
+        display: none;
     }
     
     .burger-waiter {

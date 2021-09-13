@@ -280,6 +280,10 @@ html {
         height: 80px;
         width: 80px;
     }
+
+    .burger-menu-cover {
+        display: none;
+    }
     
     .burger-waiter {
 
@@ -347,6 +351,10 @@ html {
         background-size: 100px 100px;
         height: 200px;
         width: 200px;
+    }
+
+    .burger-menu-cover {
+        display: none;
     }
     
     .burger-waiter {
@@ -423,6 +431,9 @@ html {
         width: 200px;
     }
     
+    .burger-menu-cover {
+        display: none;
+    }
     .burger-waiter {
 
         background-size: 490px 490px;
@@ -491,6 +502,9 @@ html {
         top: 40px;
         height: 50px;
         width: 50px;
+    }
+    .burger-menu-cover {
+        display: none;
     }
     
     .burger-waiter {
