@@ -27,15 +27,27 @@
   }
 
   const targetDiv5 = document.getElementById('pop-quiz');
-  const btn5 = document.getElementById("project5", "project5-1");
+  const btn5 = document.getElementById("project5");
   btn5.onclick = function () {
     targetDiv5.style.display = "block"
   }
 
-  const targetDiv6 = document.getElementById('pop-graphics');
-  const btn6 = document.getElementById("project6", "project6-1");
+  const targetDiv6 = document.getElementById('pop-quiz');
+  const btn6 = document.getElementById("project5-1");
   btn6.onclick = function () {
     targetDiv6.style.display = "block"
+  }
+
+  const targetDiv7 = document.getElementById('pop-graphics');
+  const btn7 = document.getElementById("project6");
+  btn7.onclick = function () {
+    targetDiv7.style.display = "block"
+  }
+
+  const targetDiv8 = document.getElementById('pop-graphics');
+  const btn8 = document.getElementById("project6-1");
+  btn8.onclick = function () {
+    targetDiv8.style.display = "block"
   }
 
 
