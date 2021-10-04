@@ -27,18 +27,16 @@
   }
 
   const targetDiv5 = document.getElementById('pop-quiz');
-  const btn5 = document.getElementById("project5");
-  const btn6 = document.getElementById("project5-1");
-  btn5.onclick, btn6.onclick = function () {
+  const btn5 = document.getElementById("project5", "project5-1");
+  btn5.onclick = function () {
     targetDiv5.style.display = "block"
   }
 
-  // const targetDiv6 = document.getElementById('pop-graphics');
-  // const btn7 = document.getElementById("project6");
-  // const btn8 = document.getElementById("project6-1");
-  // btn7.onclick, btn8.onclick = function () {
-  //   targetDiv6.style.display = "block"
-  // }
+  const targetDiv6 = document.getElementById('pop-graphics');
+  const btn6 = document.getElementById("project6", "project6-1");
+  btn6.onclick = function () {
+    targetDiv6.style.display = "block"
+  }
 
 
 
