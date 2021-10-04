@@ -333,7 +333,8 @@ color: #F8E058;
     bottom: 5%;
 }
 
-#quiz-img {
+#quiz-img,
+#graphics-img {
     width: 100%;
     position: absolute;
     top: 50%;
@@ -1274,13 +1275,15 @@ color: #F8E058;
         height: 600px;
     }
 
-    #descrpition-box-quiz{
+    #descrpition-box-quiz,
+    #descrpition-box-graphics {
         position: absolute;
         top: 0px;
         width: 70%;
     }
 
-    #desktop-box-quiz {
+    #desktop-box-quiz,
+    #desktop-box-graphics {
         margin-top: 370px !important;
         height: 600px;
     }
