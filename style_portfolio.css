@@ -446,6 +446,10 @@ color: #F8E058;
 
 @media only screen and (min-width: 1920px) {
 
+    .projects-box {
+        padding-top: 10%;
+    }
+
     .side-menu {
         width: 400px;
     }

@@ -236,6 +236,7 @@ color: #F8E058;
     font-size: 1.4rem;
     font-weight: 600;
     color: #4d535f5d;
+    text-align: left;
 }
 
 .question-add-lg {
@@ -506,6 +507,7 @@ color: #F8E058;
 
 
 @media only screen and (min-width: 1920px) {
+
 
     .side-menu {
         width: 400px;
@@ -943,15 +945,13 @@ color: #F8E058;
 /******************** TABLET LANDSCAPE */
 
 
+
+
 @media only screen and (max-width: 1060px) {
+
     .col-lg-6 {
         width: 100% !important;
     }
-
-}
-
-
-@media only screen and (max-width: 1060px) {
 
     .about-lg {
         display: none !important;
@@ -996,7 +996,17 @@ color: #F8E058;
         opacity: 0;
     }
 
- 
+    .question-box-sm {
+        text-align: left;
+    }
+
+    .question-selected-header {
+        color: #4D535F;
+    }
+    
+    .question-selected-add {
+        font-weight: 400;
+    }
 }
 
 
