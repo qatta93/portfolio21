@@ -23,7 +23,7 @@ html {
 }
 
 .content-container {
-    background-image: url(pic/bcg_d.png);
+    background-image: url(../pic/bcg_d.png);
     height: 100vh;
     max-height: -webkit-fill-available;
     overflow-y: hidden;
@@ -41,16 +41,14 @@ html {
     position: relative;
 }
 
-
 .side-menu-bcg {
     background-color: #4D535F;
     height: 100%;
     width: 100%;
-    display: none;
 }
 
 .burger {
-    background-image: url(pic/burger.png);
+    background-image: url(../pic/burger.png);
     background-repeat: no-repeat;
     background-size: 60px 60px;
     position: absolute;
@@ -60,12 +58,7 @@ html {
     width: 60px;
     background-color: transparent;
     border: none;
-    -webkit-animation-name: spaceboots;
-	-webkit-animation-duration: 2.5s;
-	-webkit-transform-origin:50% 50%;
-	-webkit-animation-iteration-count: 10s;
-	-webkit-animation-timing-function: linear;
-    z-index: 9999999;
+    z-index: 10;
 }
 
 .burger-menu {
@@ -76,22 +69,12 @@ html {
     display: none;
 }
 
-@-webkit-keyframes spaceboots {
-	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
-	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
-	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
-	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
-	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
-	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
-	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
-	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
-	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
-	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
-	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+.contact-header-container {
+    display: none;
 }
 
 .burger-waiter {
-    background-image: url(pic/burger_waiter.png);
+    background-image: url(../pic/burger_waiter.png);
     background-repeat: no-repeat;
     background-size: 150px 150px;
     position: absolute;
@@ -119,11 +102,13 @@ html {
     color: #EEEEEE;
     font-size: 23px;
 }
+
                                                            /* change */
-.menu-titles li:last-child { 
-    color: #F8E058;
+.menu-titles li:first-child { 
+color: #F8E058;
 }
-                                                         /* change */
+                                                        /* change */
+
 .menu-icon,
 .menu-title {
     height: 25%;
@@ -136,7 +121,8 @@ html {
     color: inherit;
 }
 
-.menu-title a:hover {
+.menu-title a:hover,
+.menu-title a:active {
     color: #F8E058;
 }
 
@@ -165,71 +151,96 @@ html {
 
 
 
-/************************************************************ PRESENTATION */
+/************************************************************ CONTACT   */
 
 
-.presentation {
-    height: 40%;
-    width: 43%;
+.contact,
+.contact-small {
+    height: 100%;
     position: absolute;
     right: 0;
-    left: 320px;
+    left: 220px;
     top: 0;
-    bottom: 0;
-    margin: auto 0;
+}
+
+.contact-small {
+    display: none;
+}
+
+.contact-container {
+    height: 100%;
+    width: 100%;
+    margin: 0 !important;
+}
+
+.contact-box {
+    padding: 7% 5% !important;
+    position: relative;
+}
+
+.contact-text {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
     color: #4D535F;
 }
 
-
-.hello {
-    height: 20%;
-    position: relative;
+.contact-text p:last-child {
+    color: #F8E058;
+    text-shadow: -1px -1px 0 #4D535F, 1px -1px 0 #4D535F, -1px 1px 0 #4D535F, 1px 1px 0 #4D535F;
 }
 
-.hello span {
+.contact-form {
     margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+    color: #4D535F;
+    width: 60%;
+}
+
+.form {
     width: 100%;
-    position: absolute;              
-    top: 50%;  
-    text-align: center;                   
-    transform: translate(0, -50%)
+    margin: 15px 0 !important;
+    background-color: rgba(255, 255, 255, 0.705);
+    border: none;
+    box-shadow: inset 2px 2px 5px #b8b9be,inset -8px -8px 15px #fff!important;
+    border-radius: 10px;
+    padding-left: 20px;
 }
 
-.name {
-    height: 50%;
-    background-image: url(pic/paint.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 110%;
-    position: relative;
+.form-name,
+.form-email {
+    height: 50px;
 }
 
-.name span {
-    margin: 0;
-    width: 100%;
-    position: absolute;              
-    top: 50%;  
-    text-align: center;                   
-    transform: translate(0, -50%)
+.form-text {
+    padding-top: 15px;
+    font-size: 1rem !important;
 }
 
-.frontend {
-    height: 30%;
-    position: relative;
+.form-button {
+    width: 150px;
+    height: 50px;
+    box-shadow: 6px 6px 12px #4d535f57,-15px -15px 16px #fff!important;
+    background-color: #F5F5F5;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4D535F;
+    padding-left: 0;
 }
-
-
-.frontend span {
-    margin: 0;
-    width: 100%;
-    position: absolute;              
-    top: 50%;  
-    text-align: center;                   
-    transform: translate(0, -50%);
-    font-weight: 400;
-}
-
-
 
 
 /************************************************************ SOCIAL */
@@ -257,16 +268,6 @@ html {
 
 
 
-/************************************************************ ANIMATION */
-
-.animation {
-    max-width: 800px;
-    position: absolute;
-    top: 60%;                
-    transform: translate(0, -50%);
-    right: 0;
-}
-
 
 /************************************************************ MEDIA QUERY */
 
@@ -281,10 +282,6 @@ html {
         background-size: 80px 80px;
         height: 80px;
         width: 80px;
-    }
-
-    .burger-menu-cover {
-        display: none;
     }
     
     .burger-waiter {
@@ -309,38 +306,47 @@ html {
         left: 30px;
     }
     
+
+
+    .contact {
+        left: 400px;
+    }
+    
+    .contact-text {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+    
+    .contact-form {
+        font-size: 1.5rem;
+    }
+    
+    .form-name,
+    .form-email {
+        height: 70px;
+    }
+    
+    .form-text {
+        font-size: 1.5rem !important;
+        height: 300px;
+    }
+    
+    .form-button {
+        width: 350px;
+        height: 90px;
+        font-size: 2rem;
+        margin-top: 60px!important;
+    }
+    
+    
     .social {
-        width: 330px;
+        width: 300px;
         top: 20px;
     }
     .social-img img {
-        height: 60px;
-    }
-    .presentation {
-        height: 30%;
-        width: 43%;
-        left: 400px;
+        height: 55px;
     }
 
-    .hello span {
-        font-size: 2.5rem;
-    }
-    
-    .name {
-        background-size: 115%;
-    }
-
-    .name span {
-        font-size: 3rem;
-    }
-    
-    .frontend span {
-        font-size: 2rem;             
-        top: 40%;  
-    }
-    .animation {
-        max-width: 900px;
-    }
 }
 
 @media only screen and (min-width: 3000px) {
@@ -354,7 +360,6 @@ html {
         height: 200px;
         width: 200px;
     }
-
     .burger-menu-cover {
         display: none;
     }
@@ -381,35 +386,41 @@ html {
         left: 30px;
     }
     
-    .presentation {
-        height: 40%;
-        left: 600px;
+
+
+    .contact {
+        left: 500px;
     }
     
-    
-    .hello {
-        height: 20%;
-        position: relative;
+    .contact-text {
+        font-size: 3.5rem;
+        font-weight: 500;
     }
     
-    .hello span {        
-        font-size: 4rem;        
-    }
-    
-    .name span {
-        font-size: 4rem;
-    }
-    
-    
-    
-    .frontend span {
-        font-size: 3rem;
+    .contact-form {
+        font-size: 2rem;
     }
 
-    .animation {
-        min-width: 1700px;
-
+    .form {
+        height: 500px;
     }
+    
+    .form-name,
+    .form-email {
+        height: 90px;
+    }
+    
+    .form-text {
+        font-size: 2rem !important;
+    }
+    
+    .form-button {
+        width: 350px;
+        height: 90px;
+        font-size: 2.5rem;
+        margin-top: 60px!important;
+    }
+    
     
     .social {
         width: 350px;
@@ -420,6 +431,7 @@ html {
     }
 
 }
+
 
 @media only screen and (min-width: 4000px) {
 
@@ -432,10 +444,10 @@ html {
         height: 200px;
         width: 200px;
     }
-    
     .burger-menu-cover {
         display: none;
     }
+    
     .burger-waiter {
 
         background-size: 490px 490px;
@@ -457,28 +469,44 @@ html {
         height: 100px;
         left: 30px;
     }
+    
+    .contact {
+        left: 800px;
+    }
+    
+    .contact-text {
+        font-size: 7rem;
+    }
+    
+    .contact-form {
+        font-size: 4rem;
+    }
 
-    .presentation {
-        left: 1100px;
+    .form {
+        height: 700px;
+        border-radius: 25px;
     }
     
-    .hello span {        
-        font-size: 6rem;        
+    .form-name,
+    .form-email {
+        height: 200px;
+        border-radius: 25px;
+        margin-bottom: 40px !important;
     }
     
-    .name span {
-        font-size: 8rem;
+    .form-text {
+        font-size: 4rem !important;
     }
     
-    .frontend span {
+    .form-button {
+        width: 550px;
+        height: 190px;
         font-size: 5rem;
+        margin-top: 150px!important;
     }
 
-    .animation {
-        min-width: 2300px;
 
-    }
-    
+
     .social {
         width: 500px;
         top: 50px;
@@ -489,6 +517,7 @@ html {
     }
 
 }
+
 
 @media only screen and (max-width: 1366px) {
     .side-menu {
@@ -536,42 +565,31 @@ html {
     .social-img img {
         height: 30px;
     }
-    .presentation {
-        height: 30%;
-        width: 43%;
-        left: 280px;
-    }
-    
-    .name span {
-        font-size: 2rem;
-    }
-    
-    .frontend span {
-        font-size: 1.5rem;             
-        top: 40%;  
-    }
-
-    .animation {
-        max-width: 650px;
-    }
 }
 
 
 /******************** TABLET LANDSCAPE */
 
+
+@media only screen and (max-width: 1060px) {
+    .col-lg-6 {
+        width: 100% !important;
+    }
+
+}
+
+
 @media only screen and (max-width: 1060px) {
 
     .content-container {
         min-height: 700px;
+        overflow-y: scroll;
     }
 
     .side-menu-bcg {
        display: none !important;
     }
 
-    .burger-waiter {
-        opacity: 0;
-    }
 
     .burger {
         opacity: 1;
@@ -594,60 +612,71 @@ html {
         opacity: 0;
     }
 
-    .presentation {
-        height: 30%;
-        width: 85%;
-        position: absolute;                  
-        top: 15%;
+    .contact {
+        display: none;
+    }
+
+    .contact-small {
+        display: block;
+        width: 100%;
+        left: 0;
+    }
+
+    .contact-container {
+        display: block!important;
+    }
+
+    .contact-box {
+        height: 300px;
+        padding: 0 !important;
+    }
+
+    .contact-box-form {
+        height: 900px;
+    }
+
+    .contact-form {
+        height: 90% !important;
+        font-size: 1.3rem;
+        width: 580px;
+    }
+    
+    .form-name,
+    .form-email {
+        height: 10%;
+    }
+    
+    .form-text {
+        font-size: 1.3rem !important;
+    }
+    
+    .form-button {
+        width: 170px;
+        height: 60px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+    .contact-header-container {
+        display: block;
+        height: 150px;
+        position: relative;
+    }
+
+    .contact-header {
+        position: absolute;
+        display: block;
+        width: 150px;
+        margin: 0 auto;
         left: 0;
         right: 0;
-        margin: 0 auto;
-        width: 100%;
-    }
-    
-    .hello {
-        height: 30%;
-        font-size: 2rem;
-    }
-
-    .name {
-        background-position: center;
-        background-size: 80%;
-        width: 90%;
-        margin: 0 auto;
-    }
-    
-    .name span {           
-        top: 40%;  
-        font-size: 2.5rem;
-    }
-    
-    .frontend span {             
-        top: 20%;  
-        font-size: 2.5rem;
-        font-weight: 200;
-    }
-
-    .social {
-        height: 65px;
-        width: 200px;
-    }
-    
-    .social-img img {
-        height: 40px;
-    }
-
-    .animation {
-        max-width: 100%;
-        bottom: 15%;                
-        transform: translate(0, -15%);
-        height: 55%;
-        right: 20%;
+        bottom: 0;
+        text-decoration: underline solid #F8E058;
     }
 }
 
 
-/******************** TABLET PORTRAIT */
+/******************** TABLET PORTRAIT  768*1024*/
 
 
 @media only screen and (max-width: 768px) {
@@ -656,62 +685,75 @@ html {
         min-height: 800px;
     }
 
-    .presentation {
-        height: 20%;
-    }
-    
-    .hello {
-        height: 40%;
+    .contact-text {
+        font-size: 1.5rem;
+        top: 150px;
     }
 
-    .name {
-        background-size: 100%;
-        background-position: bottom right;
-        width: 90%;
-    }
-    
-    .name span {           
-        top: 40%;  
-    }
-    
-    .frontend span {             
-        top: 30%;  
+    .contact-box-form {
+        height: 600px;
     }
 
-    .animation {
-        bottom: 30%;                
-        transform: translate(0, -30%);
-        height: 70%;
-        min-width: 800px;
-        right: 10%;
+    .contact-form {
+        font-size: 1.2rem;
+        width: 450px;
+        margin-top: 20px;
     }
+    
+    .form-name,
+    .form-email {
+        height: 10%;
+    }
+    
+    .form-text {
+        font-size: 1.2rem !important;
+        height: 200px;
+    }
+
+    
+    .form-button {
+        margin-top: 30px!important;
+    }
+
+    
 }
 
 
 
 @media only screen and (max-width: 650px) {
+    
 
+    .contact-text {
+        font-size: 1.4rem;
+        top: 150px;
+    }
 
-    .name {
-        background-size: 110%;
-        width: 95%;
+    .contact-form {
+        width: 400px;
     }
     
-    .name span {           
-        font-size: 2.1rem;
+    .form-name,
+    .form-email {
+        height: 13%;
     }
     
-    .frontend span {             
-        font-size: 2rem;
+    .form-text {
+        font-size: 1.2rem !important;
+        height: 180px;
+    }
+    
+    .form {
+        margin: 10px 0 !important;
     }
 
-    .animation {
-        bottom: 20%;                
-        transform: translate(0, -20%);
-        height: 50%;
-        min-width: 800px;
-        right: -9%;
+    .contact-box {
+        height: 200px;
     }
+
+    .contact-box-form {
+        height: 500px;
+    }
+
 }
 
 
@@ -724,7 +766,8 @@ html {
 @media only screen and (max-width: 480px) {
 
     .content-container {
-        min-height: 600px;
+        min-height: 640px;
+        padding-bottom: 30px;
     }
 
     .burger {
@@ -735,33 +778,47 @@ html {
         width: 45x;
     }
 
-    .presentation {                
-        top: 20%;
+    .contact-text {
+        font-size: 1.1rem;
+        top: 100px;
     }
 
-
-    .hello {
-        height: 40%;
-        font-size: 1.5rem;
+    .contact-form {
+        width: 300px;
+        margin-top: 70px;
     }
 
-    .name {
-        background-size: 120%;
-        width: 99%;
+    .contact-box {
+        height: 170px;
+    }
+
+    .contact-box-form {
+        height: 500px;
     }
     
-    .name span {           
-        top: 40%;  
-        font-size: 1.6rem;
+    .form-name,
+    .form-email {
+        height: 12%;
+        font-size: 1.1rem;
     }
     
-    .frontend span {             
-        top: 50%;  
-        font-size: 1.65rem;
-        max-width: 95%;
-        text-align: center;
-        margin: 0 2%;
+    .form-text {
+        font-size: 1.1rem !important;
+        height: 150px;
     }
+    
+    .form {
+        margin: 8px 0 !important;
+    }
+
+    .form-button {
+        width: 140px;
+        height: 50px;
+        border-radius: 15px;
+        margin-top: 10px!important;
+        margin-bottom: 40px!important;
+    }
+
 
     .social {
         height: 55px;
@@ -775,12 +832,5 @@ html {
     
     .social-img img {
         height: 35px;
-    }
-
-    .animation {
-        min-width: 700px;
-        bottom: 10%;                
-        transform: translate(0, -10%);
-        right: -20%;
     }
 }

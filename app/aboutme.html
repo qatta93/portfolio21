@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style_aboutme.css">
-  <link rel="stylesheet" href="style_menu.css">
+  <link rel="stylesheet" href="styles/style_aboutme.css">
+  <link rel="stylesheet" href="styles/style_menu.css">
   <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
 </head>
 
@@ -13,8 +13,8 @@
   <main class="container">
     <div class="content-container">
       <div class="side-menu">
-        <input type="button" onclick="setTimeout(ShowDiv(), 0)" class="burger burger-menu" />
-        <input type="button" onclick="setTimeout(ShowMenu(), 0)" class="burger burger-menu-cover" />
+        <input type="button" onclick="setTimeout(ShowDiv(), 0)" class="burger burger-menu" value=""/>
+        <input type="button" onclick="setTimeout(ShowMenu(), 0)" class="burger burger-menu-cover" value=""/>
         <div class="side-menu-bcg" id="myDiv">
           <div class="burger-waiter"></div>
           <div class="menu row justify-content-center">
@@ -235,8 +235,8 @@
 
       <!-- MENU COVER -->
       <div class="menu-cover" id="menu-cover">
-        <input type="button" onclick="setTimeout(ShowDiv(), 0)" class="burger burger-menu" />
-        <input type="button" onclick="setTimeout(ShowMenu(), 0)" class="burger burger-menu-cover" />
+        <input type="button" onclick="setTimeout(ShowDiv(), 0)" class="burger burger-menu" value=""/>
+        <input type="button" onclick="setTimeout(ShowMenu(), 0)" class="burger burger-menu-cover" value=""/>
         <div class="menu-cover-list row">
           <div class="menu-cover-img col-3">
             <a href="contact.html"><img src="pic/mail.png" alt="contact"></a>
@@ -286,18 +286,12 @@
     </div>
   </main>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="lottie.js"></script>
-  <script src="script.js"></script>
-  <script src="script_about_me.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="scripts/lottie.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/script_about_me.js"></script>
 </body>
 
 </html>

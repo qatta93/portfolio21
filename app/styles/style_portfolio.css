@@ -23,7 +23,7 @@ html {
 }
 
 .content-container {
-    background-image: url(pic/bcg_d.png);
+    background-image: url(../pic/bcg_d.png);
     height: 100vh;
     max-height: -webkit-fill-available;
     overflow-y: hidden;
@@ -48,7 +48,7 @@ html {
 }
 
 .burger {
-    background-image: url(pic/burger.png);
+    background-image: url(../pic/burger.png);
     background-repeat: no-repeat;
     background-size: 60px 60px;
     position: absolute;
@@ -70,7 +70,7 @@ html {
 }
 
 .burger-waiter {
-    background-image: url(pic/burger_waiter.png);
+    background-image: url(../pic/burger_waiter.png);
     background-repeat: no-repeat;
     background-size: 150px 150px;
     position: absolute;
@@ -230,7 +230,7 @@ color: #F8E058;
 
 .luope {
     position: absolute;
-    background-image: url(pic/loupe.png);
+    background-image: url(../pic/loupe.png);
     background-size: cover;
     opacity: 0.2;
     height: 80px;
@@ -267,7 +267,7 @@ color: #F8E058;
     width: 40px;
     right: 30px;
     top: 30px;
-    background-image: url(pic/close.png);
+    background-image: url(../pic/close.png);
     background-size: cover;
     background-color: transparent;
     border: none;
