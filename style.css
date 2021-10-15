@@ -186,7 +186,7 @@ html {
     position: relative;
 }
 
-.hello p {
+.hello span {
     margin: 0;
     width: 100%;
     position: absolute;              
@@ -204,7 +204,7 @@ html {
     position: relative;
 }
 
-.name p {
+.name span {
     margin: 0;
     width: 100%;
     position: absolute;              
@@ -219,7 +219,7 @@ html {
 }
 
 
-.frontend p {
+.frontend span {
     margin: 0;
     width: 100%;
     position: absolute;              
@@ -266,6 +266,7 @@ html {
     transform: translate(0, -50%);
     right: 0;
 }
+
 
 /************************************************************ MEDIA QUERY */
 
@@ -321,7 +322,7 @@ html {
         left: 400px;
     }
 
-    .hello p {
+    .hello span {
         font-size: 2.5rem;
     }
     
@@ -329,11 +330,11 @@ html {
         background-size: 115%;
     }
 
-    .name p {
+    .name span {
         font-size: 3rem;
     }
     
-    .frontend p {
+    .frontend span {
         font-size: 2rem;             
         top: 40%;  
     }
@@ -391,17 +392,17 @@ html {
         position: relative;
     }
     
-    .hello p {        
+    .hello span {        
         font-size: 4rem;        
     }
     
-    .name p {
+    .name span {
         font-size: 4rem;
     }
     
     
     
-    .frontend p {
+    .frontend span {
         font-size: 3rem;
     }
 
@@ -461,15 +462,15 @@ html {
         left: 1100px;
     }
     
-    .hello p {        
+    .hello span {        
         font-size: 6rem;        
     }
     
-    .name p {
+    .name span {
         font-size: 8rem;
     }
     
-    .frontend p {
+    .frontend span {
         font-size: 5rem;
     }
 
@@ -541,11 +542,11 @@ html {
         left: 280px;
     }
     
-    .name p {
+    .name span {
         font-size: 2rem;
     }
     
-    .frontend p {
+    .frontend span {
         font-size: 1.5rem;             
         top: 40%;  
     }
@@ -616,12 +617,12 @@ html {
         margin: 0 auto;
     }
     
-    .name p {           
+    .name span {           
         top: 40%;  
         font-size: 2.5rem;
     }
     
-    .frontend p {             
+    .frontend span {             
         top: 20%;  
         font-size: 2.5rem;
         font-weight: 200;
@@ -669,11 +670,11 @@ html {
         width: 90%;
     }
     
-    .name p {           
+    .name span {           
         top: 40%;  
     }
     
-    .frontend p {             
+    .frontend span {             
         top: 30%;  
     }
 
@@ -696,11 +697,11 @@ html {
         width: 95%;
     }
     
-    .name p {           
+    .name span {           
         font-size: 2.1rem;
     }
     
-    .frontend p {             
+    .frontend span {             
         font-size: 2rem;
     }
 
@@ -749,12 +750,12 @@ html {
         width: 99%;
     }
     
-    .name p {           
+    .name span {           
         top: 40%;  
         font-size: 1.6rem;
     }
     
-    .frontend p {             
+    .frontend span {             
         top: 50%;  
         font-size: 1.65rem;
         max-width: 95%;
